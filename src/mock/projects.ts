@@ -62,6 +62,8 @@ export const mockProjectDetail: ProjectDetail = {
   demoUrl: "https://example.com/demo",
   sourceUrl: "https://github.com/example/repo",
   content: `
+
+
 Đây là một mô tả chi tiết về dự án, mình nói khá năng mà tên tôi sử dụng phong cách phát triển phần mềm dùng kỹ thuật và các công cụ hiện đại liên quan. Dự án có thể cải thiện năng lực để các công cụ sử dụng hiệu quả cùng cấp độ sử dụng.
 
 ### Tổng quan Kiến trúc
@@ -88,16 +90,15 @@ Một thông tin chi tiết với API có thể được tìm thấy trong [Tài
 
 ### Trích dẫn
 
-"Mục tiêu của thiết kế phải là dễ dàng cho các nhà phát triển sử dụng. Đó là chìa khóa định cao cấp tư tưởng về"
-
-— Leonardo da Vinci (Phỏng tác)
-
+> "Mục tiêu của thiết kế phải là dễ dàng cho các nhà phát triển sử dụng. Đó là chìa khóa định cao cấp tư tưởng về"
+> 
+> — Leonardo da Vinci (Phỏng tác)
 
 ### Các tính năng nổi bật
 
-- *Real-time Data*: Đồng bộ dữ liệu người dùng theo thời gian thực sử dụng WebSocket.
-- *Analytics Dashboard*: Hỗ trợ báo cáo và thống kê tử dùng việc bảo vệ.
-- *Third-party Integration*: Tích hợp API thành viên với các bên để.
+- **Real-time Data**: Đồng bộ dữ liệu người dùng theo thời gian thực sử dụng WebSocket.
+- **Analytics Dashboard**: Hỗ trợ báo cáo và thống kê tử dùng việc bảo vệ.
+- **Third-party Integration**: Tích hợp API thành viên với các bên để.
 
 ### Mã nguồn (Code Snippet)
 
@@ -120,7 +121,6 @@ const verifyToken = (req, res, next) => {
 \`\`\`
 
 Quy trình phát triển tập trung vào trải nghiệm người dùng, đảm bảo hiệu suất cao và hỗ trợ đầy đủ. Các quy tắc giúp nhóm nhằng được thiết kế cho phía giám sát các yêu cầu chi tiết, giúp phối hợp tốt hơn trong quá trình phát triển.
-images.unsplash.com
 `,
 };
 
