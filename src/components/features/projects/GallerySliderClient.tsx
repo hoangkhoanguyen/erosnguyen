@@ -33,22 +33,26 @@ export default function GallerySliderClient({ children }: Props) {
       </Swiper>
 
       {/* Thumbnails */}
-      <Swiper
-        modules={[FreeMode, Thumbs]}
-        onSwiper={setThumbsSwiper}
-        freeMode
-        watchSlidesProgress
-        spaceBetween={12}
-        slidesPerView={4}
-      >
-        {children.map((child, i) => (
-          <SwiperSlide key={i}>
-            <div className="thumbnail-slide h-24 overflow-hidden rounded-xl opacity-60 hover:opacity-100 transition">
-              {child}
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className="relative overflow-hidden">
+        <Swiper
+          modules={[FreeMode, Thumbs]}
+          onSwiper={setThumbsSwiper}
+          freeMode
+          watchSlidesProgress
+          spaceBetween={12}
+          slidesPerView={3.6}
+        >
+          {children.map((child, i) => (
+            <SwiperSlide key={i}>
+              <div className="thumbnail-slide h-24 overflow-hidden rounded-md opacity-60 hover:opacity-100 transition">
+                {child}
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-24 bg-gradient-to-l from-black to-transparent" />
+      </div>
     </div>
   );
 }
