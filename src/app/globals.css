@@ -211,7 +211,7 @@ button:not([disabled]) {
 
   /* HEADINGS */
   .post-content :where(h1, h2, h3, h4, h5, h6) {
-    @apply text-primary dark:text-primary;
+    @apply text-zinc-800 dark:text-zinc-200;
   }
 
   /* PARAGRAPH */

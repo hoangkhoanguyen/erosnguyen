@@ -62,45 +62,44 @@ export const mockProjectDetail: ProjectDetail = {
   demoUrl: "https://example.com/demo",
   sourceUrl: "https://github.com/example/repo",
   content: `
-
-
 Đây là một mô tả chi tiết về dự án, mình nói khá năng mà tên tôi sử dụng phong cách phát triển phần mềm dùng kỹ thuật và các công cụ hiện đại liên quan. Dự án có thể cải thiện năng lực để các công cụ sử dụng hiệu quả cùng cấp độ sử dụng.
 
-## Tiêu đề Cấp 2: Tổng quan Kiến trúc
+### Tổng quan Kiến trúc
 
 Hệ thống được thiết kế theo mô hình Microservices, đảm bảo tính linh hoạt và khả năng mở rộng cao.
 
 ![Architecture Diagram](https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop)
 
-## Tiêu đề Cấp 3: Frontend Layer
+### Frontend Layer
 
 Sử dụng ReactJS kết hợp với Tailwind CSS để tạo giao diện đẹp và responsive.
 
 ![Frontend UI](https://images.unsplash.com/photo-1661288378926-30c78e59560c?w=800&h=400&fit=crop)
 
-## Tiêu đề Cấp 4: Quản lý State
+#### Quản lý State
 
-## Tiêu đề Cấp 5: Redux Toolkit
+##### Redux Toolkit
 
-## Tiêu đề Cấp 6: Middleware Custom
+###### Middleware Custom
 
-## Tài liệu tham khảo
+### Tài liệu tham khảo
 
 Một thông tin chi tiết với API có thể được tìm thấy trong [Tài liệu kỹ thuật](https://example.com). Mã nguồn mở được chia sẻ trên [GitHub Repository](https://github.com/example).
 
-## Trích dẫn
+### Trích dẫn
 
-> "Mục tiêu của thiết kế phải là dễ dàng cho các nhà phát triển sử dụng. Đó là chìa khóa định cao cấp tư tưởng về"
-> 
-> — Leonardo da Vinci (Phỏng tác)
+"Mục tiêu của thiết kế phải là dễ dàng cho các nhà phát triển sử dụng. Đó là chìa khóa định cao cấp tư tưởng về"
 
-## Các tính năng nổi bật
+— Leonardo da Vinci (Phỏng tác)
 
-- **Real-time Data**: Đồng bộ dữ liệu người dùng theo thời gian thực sử dụng WebSocket.
-- **Analytics Dashboard**: Hỗ trợ báo cáo và thống kê tử dùng việc bảo vệ.
-- **Third-party Integration**: Tích hợp API thành viên với các bên để.
 
-## Mình hoa Mã nguồn (Code Snippet)
+### Các tính năng nổi bật
+
+- *Real-time Data*: Đồng bộ dữ liệu người dùng theo thời gian thực sử dụng WebSocket.
+- *Analytics Dashboard*: Hỗ trợ báo cáo và thống kê tử dùng việc bảo vệ.
+- *Third-party Integration*: Tích hợp API thành viên với các bên để.
+
+### Mã nguồn (Code Snippet)
 
 \`\`\`javascript
 const jwt = require('jsonwebtoken');
@@ -121,6 +120,7 @@ const verifyToken = (req, res, next) => {
 \`\`\`
 
 Quy trình phát triển tập trung vào trải nghiệm người dùng, đảm bảo hiệu suất cao và hỗ trợ đầy đủ. Các quy tắc giúp nhóm nhằng được thiết kế cho phía giám sát các yêu cầu chi tiết, giúp phối hợp tốt hơn trong quá trình phát triển.
+images.unsplash.com
 `,
 };
 
