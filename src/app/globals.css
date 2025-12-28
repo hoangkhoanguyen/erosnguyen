@@ -112,7 +112,7 @@
   --pallete-primary-main: #ea580c;
   --pallete-primary-light: #fb923c;
   --pallete-primary-dark: #c2410c;
-  
+
   --pallete-background-light: #fffaf5;
   --pallete-background-dark: #1c1917;
   --pallete-surface-light: #ffffff;
@@ -222,9 +222,7 @@ button:not([disabled]) {
 
   /* INLINE CODE */
   .post-content code {
-    @apply text-primary
-           bg-zinc-100 dark:bg-zinc-800
-           px-1 rounded;
+    @apply text-primary bg-zinc-100 dark:bg-zinc-800 px-1 rounded;
   }
 
   /* LINK */
@@ -234,7 +232,11 @@ button:not([disabled]) {
 
   /* BLOCKQUOTE */
   .post-content blockquote {
-    @apply text-zinc-600 dark:text-zinc-400
-           border-l-4 border-primary;
+    @apply text-zinc-600 dark:text-zinc-400 border-l-4 border-primary;
+  }
+
+  /* Strong Text  */
+  .post-content strong {
+    @apply text-primary;
   }
 }
