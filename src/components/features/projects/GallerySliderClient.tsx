@@ -37,7 +37,7 @@ export default function GallerySliderClient({ children }: Props) {
         <Swiper
           modules={[FreeMode, Thumbs]}
           onSwiper={setThumbsSwiper}
-          // freeMode
+          freeMode
           watchSlidesProgress
           spaceBetween={12}
           slidesPerView={3.6}
@@ -51,7 +51,7 @@ export default function GallerySliderClient({ children }: Props) {
           ))}
         </Swiper>
 
-        <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-24 bg-gradient-to-l from-black to-transparent" />
+        <div className="pointer-events-none absolute top-0 right-0 z-10 h-full w-24 bg-linear-to-l from-black to-transparent" />
       </div>
     </div>
   );
