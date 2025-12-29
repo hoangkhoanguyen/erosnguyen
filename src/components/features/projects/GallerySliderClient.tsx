@@ -37,7 +37,7 @@ export default function GallerySliderClient({ children }: Props) {
         <Swiper
           modules={[FreeMode, Thumbs]}
           onSwiper={setThumbsSwiper}
-          freeMode
+          // freeMode
           watchSlidesProgress
           spaceBetween={12}
           slidesPerView={3.6}
