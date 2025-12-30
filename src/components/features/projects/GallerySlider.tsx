@@ -1,4 +1,3 @@
-import Image from "next/image";
 import GallerySliderClient from "./GallerySliderClient";
 import { ProjectImage } from "@/mock/projects";
 
@@ -7,34 +6,15 @@ interface Props {
 }
 
 export default function ProjectGallery({ images }: Props) {
-  return (
-    <GallerySliderClient>
-      {images.map((img, i) => (
-        <div key={i} className="relative aspect-video w-full">
-          <Image
-            src={img.url}
-            alt={img.title ?? ""}
-            fill
-            className="object-cover rounded-md"
-            priority={i === 0}
-          />
+  const mainImages = images.map(({ url, title, subtitle }) => ({
+    url,
+    title,
+    subtitle,
+  }));
 
-          {(img.title || img.subtitle) && (
-            <div className="absolute inset-x-0 bottom-0 h-1/3 rounded-md bg-linear-to-t from-black/90 to-transparent flex items-end">
-              <div className="p-5">
-                {img.title && (
-                  <h3 className="text-white text-xl font-semibold">
-                    {img.title}
-                  </h3>
-                )}
-                {img.subtitle && (
-                  <p className="text-white/80 text-lg mt-1">{img.subtitle}</p>
-                )}
-              </div>
-            </div>
-          )}
-        </div>
-      ))}
-    </GallerySliderClient>
+  const thumbImages = images.map(({ url }) => ({ url }));
+
+  return (
+    <GallerySliderClient mainImages={mainImages} thumbImages={thumbImages} />
   );
 }
