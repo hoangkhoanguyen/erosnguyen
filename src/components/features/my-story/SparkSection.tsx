@@ -20,16 +20,16 @@ const SparkSection = () => {
             />
           </div>
           <div className="absolute bottom-6 left-6 right-6 bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-md p-4 rounded-xl border border-white/10 shadow-lg z-20">
-            <p className="text-sm text-gray-600 dark:text-gray-300 italic">
+            <p className="text-sm text-gray-300 italic">
               &quot;The only way to do great work is to love what you do.&quot;
             </p>
           </div>
         </div>
         <div className="flex flex-col gap-6">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white leading-tight">
+          <h2 className="text-3xl font-bold text-foreground leading-tight">
             The Spark
           </h2>
-          <div className="space-y-4 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+          <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
             <p>
               It all started in 2015. I wasn&apos;t studying Computer Science; I
               was actually a graphic design major. I felt limited by static
