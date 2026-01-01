@@ -14,3 +14,24 @@ export function cn(...inputs: ClassValue[]) {
 export function markdownToHtml(markdown: string): Promise<string> | string {
   return marked.parse(markdown);
 }
+
+// Table of Content function 
+export interface TocItem {
+  level: number;
+  text: string;
+}
+
+export function extractToc(content: string): TocItem[] {
+  const headingRegex = /^(#{2,6})\s+(.*)$/gm;
+  const toc: TocItem[] = [];
+
+  let match;
+  while ((match = headingRegex.exec(content)) !== null) {
+    toc.push({
+      level: match[1].length,
+      text: match[2],
+    });
+  }
+
+  return toc;
+}

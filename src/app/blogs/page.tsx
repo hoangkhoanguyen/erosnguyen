@@ -6,11 +6,10 @@ import { PaginationWrapper } from "@/components/features/blogs/BlogPagination";
 const PAGE_SIZE = 6;
 
 interface BlogsPageProps {
-  searchParams: Promise<{ page?: string;}>;
+  searchParams: Promise<{ page?: string }>;
 }
 
 export default async function BlogsPage({ searchParams }: BlogsPageProps) {
-  
   const params = await searchParams;
   const page = parseInt(params?.page ?? "1", 10);
   const totalBlogs = mockBlogDetail.length;
@@ -24,7 +23,7 @@ export default async function BlogsPage({ searchParams }: BlogsPageProps) {
       </p>
 
       {/* Blog List */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
         {mockBlogDetail.map((blog) => (
           <BlogPostCard key={blog.id} blog={blog} />
         ))}
@@ -32,7 +31,7 @@ export default async function BlogsPage({ searchParams }: BlogsPageProps) {
 
       {/* Pagination */}
       <div className="mt-10">
-        <PaginationWrapper page={page} pageCount={pageCount}/>
+        <PaginationWrapper page={page} pageCount={pageCount} />
       </div>
     </div>
   );
