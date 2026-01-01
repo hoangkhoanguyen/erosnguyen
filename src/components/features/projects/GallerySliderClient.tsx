@@ -10,11 +10,11 @@ import "swiper/css/thumbs";
 import "swiper/css/free-mode";
 
 interface Props {
-  slides: ReactNode[];
+  children: ReactNode[];
   thumbs: ReactNode[];
 }
 
-export default function GallerySliderClient({ slides, thumbs }: Props) {
+export default function GallerySliderClient({ children, thumbs }: Props) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
@@ -28,7 +28,7 @@ export default function GallerySliderClient({ slides, thumbs }: Props) {
         spaceBetween={12}
         className="mb-4"
       >
-        {slides.map((slide, i) => (
+        {children.map((slide, i) => (
           <SwiperSlide key={i}>{slide}</SwiperSlide>
         ))}
       </Swiper>

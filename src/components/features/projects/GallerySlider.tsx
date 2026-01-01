@@ -43,5 +43,5 @@ export default function ProjectGallery({ images }: Props) {
     </div>
   ));
 
-  return <GallerySliderClient slides={slides} thumbs={thumbs} />;
+  return <GallerySliderClient thumbs={thumbs}>{slides}</GallerySliderClient>;
 }
