@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeInitializer } from "@/components/providers/ThemeInitializer";
+import FloatingActions from "@/components/layout/FloatingActions";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
+          <FloatingActions />
         </ThemeProvider>
       </body>
     </html>
