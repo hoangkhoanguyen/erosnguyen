@@ -240,3 +240,7 @@ button:not([disabled]) {
     @apply text-primary;
   }
 }
+
+.post-content ul li::marker {
+  @apply text-primary;
+}
