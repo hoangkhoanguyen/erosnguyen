@@ -41,7 +41,9 @@ export default async function BlogDetail({ params }: Props) {
       </div>
 
       {/* Post Title */}
-      <h1 className="py-2 text-5xl font-bold text-center">{blog.title}</h1>
+      <h1 className="py-2 text-4xl md:text-5xl font-bold text-center">
+        {blog.title}
+      </h1>
 
       {/* Author Info */}
       <div className="py-10 flex align-center justify-center">
@@ -72,18 +74,18 @@ export default async function BlogDetail({ params }: Props) {
 
         <div className="my-10 h-0.5 w-full bg-gray-700" />
 
-        <div className="flex justify-between">
-          <div className="flex gap-2">
+        <div className="flex justify-between flex-wrap md:flex-nowrap gap-4">
+          <div className="flex gap-2 flex-wrap shrink-0 flex-1">
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1 bg-primary-light text-primary-dark rounded-full text-sm  color-white"
+                className="px-3 py-1 bg-primary-light/30 text-primary-dark rounded-full text-sm  color-white"
               >
                 #{tag}
               </span>
             ))}
           </div>
-          <div className="flex items-center gap-6 text-sm text-muted-foreground">
+          <div className="flex items-center gap-6 text-sm text-muted-foreground shrink-0">
             <button
               type="button"
               className="flex items-center gap-2 hover:text-red-500 transition"
@@ -109,7 +111,7 @@ export default async function BlogDetail({ params }: Props) {
       <h2 className="py-10 text-3xl font-bold">Related Articles</h2>
 
       {/* Blog List */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-fr">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
         {mockBlogDetail.map((blog) => (
           <BlogPostCard key={blog.id} blog={blog} />
         ))}
