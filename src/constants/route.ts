@@ -1,7 +1,7 @@
 export const WEB_ROUTE = {
   root: "/",
   home: "/",
-  aboutMe: "/about-me",
+  myStory: "/my-story",
   blogs: "/blogs",
   blogDetail: "/blogs/[slug]",
   projects: "/projects",
@@ -67,7 +67,7 @@ export function generateRoute<N extends Namespace, K extends keyof Routes[N]>(
 export const webRoutes = {
   root: () => WEB_ROUTE.root,
   home: () => WEB_ROUTE.home,
-  aboutMe: () => WEB_ROUTE.aboutMe,
+  myStory: () => WEB_ROUTE.myStory,
   blogs: () => WEB_ROUTE.blogs,
   blogDetail: (params: { slug: string }) =>
     generateRoute("web", "blogDetail", params),

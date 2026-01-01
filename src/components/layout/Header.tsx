@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { Button } from "../ui";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
@@ -13,7 +12,7 @@ import { QuickContact } from "./QuickContact";
 export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container">
         <div className="flex items-center justify-between py-3">
           {/* Logo */}
           <Link
@@ -32,6 +31,12 @@ export function Header() {
           <div className="hidden md:flex flex-1 justify-end items-center gap-8">
             <nav className="flex items-center gap-9">
               <Link
+                href={webRoutes.myStory()}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                Câu chuyện
+              </Link>
+              <Link
                 href={webRoutes.projects()}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
@@ -42,12 +47,6 @@ export function Header() {
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 Blog
-              </Link>
-              <Link
-                href={webRoutes.aboutMe()}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-              >
-                Về tôi
               </Link>
             </nav>
 

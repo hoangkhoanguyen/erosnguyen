@@ -1,407 +1,773 @@
 <!DOCTYPE html>
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>My Story - Full Stack Developer</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#2b7cee",
-                        "background-light": "#f6f7f8",
-                        "background-dark": "#101822",
-                        "surface-light": "#ffffff",
-                        "surface-dark": "#1a222c",
-                        "border-light": "#e5e7eb",
-                        "border-dark": "#282f39",
-                    },
-                    fontFamily: {
-                        "display": ["Manrope", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>My Story - Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2b7cee",
+              "background-light": "#f6f7f8",
+              "background-dark": "#101822",
+              "surface-light": "#ffffff",
+              "surface-dark": "#1a222c",
+              "border-light": "#e5e7eb",
+              "border-dark": "#282f39",
             },
-        }
+            fontFamily: {
+              display: ["Manrope", "sans-serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+              lg: "0.5rem",
+              xl: "0.75rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-display overflow-x-hidden transition-colors duration-300">
-<div class="relative flex h-auto min-h-screen w-full flex-col">
-<header class="sticky top-0 z-50 w-full border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md">
-<div class="flex items-center justify-between whitespace-nowrap px-6 py-4 lg:px-10">
-<div class="flex items-center gap-4">
-<div class="size-8 text-primary">
-<svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
-</svg>
-</div>
-<h2 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">DevPortfolio</h2>
-</div>
-<div class="hidden md:flex flex-1 justify-end gap-8">
-<div class="flex items-center gap-6 lg:gap-9">
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Home</a>
-<a class="text-primary text-sm font-bold leading-normal transition-colors" href="#">About Me</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Projects</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Blog</a>
-<a class="text-gray-600 dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors" href="#">Contact</a>
-</div>
-<div class="flex gap-2">
-<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-200 dark:bg-surface-dark text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-800 transition-colors">
-<span class="material-symbols-outlined text-[20px]">translate</span>
-</button>
-<button class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-200 dark:bg-surface-dark text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-800 transition-colors">
-<span class="material-symbols-outlined text-[20px]">dark_mode</span>
-</button>
-</div>
-</div>
-<button class="md:hidden flex items-center justify-center rounded-lg h-10 w-10 text-gray-900 dark:text-white">
-<span class="material-symbols-outlined text-[24px]">menu</span>
-</button>
-</div>
-</header>
-<main class="flex-1">
-<section class="px-4 py-16 md:px-10 lg:px-40 flex justify-center bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark">
-<div class="flex flex-col max-w-[960px] flex-1">
-<div class="@container">
-<div class="flex flex-col gap-8 items-center text-center py-10">
-<div class="flex items-center gap-2 text-primary bg-primary/10 px-4 py-1.5 rounded-full mb-2">
-<span class="material-symbols-outlined text-sm">history_edu</span>
-<span class="text-xs font-bold uppercase tracking-widest">My Personal Story</span>
-</div>
-<h1 class="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl lg:text-7xl max-w-4xl">
-                            Behind the Code: <br class="hidden md:block"/> A Journey of Curiosity.
-                        </h1>
-<p class="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto">
-                            I'm Alex, a developer who believes that every line of code tells a story. This is a deep dive into how I went from tinkering with HTML to architecting scalable systems, and the lessons learned along the way.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-<section class="px-4 py-8 bg-background-light dark:bg-background-dark border-b border-border-light dark:border-border-dark">
-<div class="max-w-[960px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8">
-<div class="flex flex-col items-center text-center">
-<span class="text-3xl font-black text-primary">5+</span>
-<span class="text-sm text-gray-500 dark:text-gray-400 font-medium">Years Experience</span>
-</div>
-<div class="flex flex-col items-center text-center">
-<span class="text-3xl font-black text-primary">40+</span>
-<span class="text-sm text-gray-500 dark:text-gray-400 font-medium">Projects Shipped</span>
-</div>
-<div class="flex flex-col items-center text-center">
-<span class="text-3xl font-black text-primary">12</span>
-<span class="text-sm text-gray-500 dark:text-gray-400 font-medium">Open Source Contribs</span>
-</div>
-<div class="flex flex-col items-center text-center">
-<span class="text-3xl font-black text-primary">∞</span>
-<span class="text-sm text-gray-500 dark:text-gray-400 font-medium">Curiosity</span>
-</div>
-</div>
-</section>
-<section class="px-4 py-20 md:px-10 lg:px-40 flex justify-center">
-<div class="max-w-[960px] w-full grid md:grid-cols-2 gap-12 items-center">
-<div class="relative group w-full aspect-[4/5] md:aspect-square rounded-2xl overflow-hidden shadow-2xl">
-<div class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10"></div>
-<div class="w-full h-full bg-center bg-cover bg-no-repeat transition-transform duration-700 group-hover:scale-105" data-alt="Portrait of a developer working in a modern office setup with warm lighting" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAW__BnID-JtvZue1iglmK9CSbUL-MevXbusdcY1QY2z0-bkKV2RBKI4rP1-zNofi9M42sk16UvnwMznMW8vnxxezDlNWBIwLxA3pgrBuAbb5DPH5_XDDM0X5EePBCHAf2zQATmPVmxgWJ3sgq3CzH3E5Q5zZ1Yu41V5OPBJeiK2JvjKtYS_F6-T6ob-r_SrGWg1KsgoZBOUTPcT8gdV8N6RFb-ai9vy-KaZLbD_qwjXqe3_4OntDyDOF4ZLItOSsxDXcJloRAxHNM");'></div>
-<div class="absolute bottom-6 left-6 right-6 bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-md p-4 rounded-xl border border-white/10 shadow-lg z-20">
-<p class="text-sm text-gray-600 dark:text-gray-300 italic">"The only way to do great work is to love what you do."</p>
-</div>
-</div>
-<div class="flex flex-col gap-6">
-<h2 class="text-3xl font-bold text-gray-900 dark:text-white leading-tight">The Spark</h2>
-<div class="space-y-4 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-<p>
-                            It all started in 2015. I wasn't studying Computer Science; I was actually a graphic design major. I felt limited by static images. I wanted my designs to <em>move</em>, to react, to live.
-                        </p>
-<p>
-                            I stumbled upon a "View Source" button on a browser. That chaotic mess of HTML tags felt like a secret language. I spent the next three months obsessed, breaking websites just to see if I could fix them.
-                        </p>
-<p>
-                            By the time I graduated, I knew my path wasn't just in making things look good, but in building the engines that power them. The transition from designer to developer gave me a unique superpower: <strong class="text-primary font-bold">I speak both languages.</strong>
-</p>
-</div>
-</div>
-</div>
-</section>
-<section class="px-4 py-20 bg-surface-light dark:bg-surface-dark border-y border-border-light dark:border-border-dark">
-<div class="max-w-[800px] mx-auto">
-<h2 class="text-gray-900 dark:text-white text-3xl md:text-4xl font-black text-center mb-4">Milestones &amp; Growth</h2>
-<p class="text-center text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto">A timeline of pivotal moments that shaped my career and technical philosophy.</p>
-<div class="grid grid-cols-[40px_1fr] gap-x-6 px-4">
-<div class="flex flex-col items-center gap-1 pt-1">
-<div class="size-12 rounded-full bg-white dark:bg-surface-dark border-2 border-primary flex items-center justify-center text-primary z-10 shadow-lg shadow-primary/20">
-<span class="material-symbols-outlined text-[24px]">terminal</span>
-</div>
-<div class="w-[2px] bg-gray-200 dark:bg-gray-800 h-full grow my-2"></div>
-</div>
-<div class="flex flex-col pb-12 pt-1 pl-4">
-<span class="text-primary font-bold text-sm tracking-wide uppercase mb-1">2015 - The Beginning</span>
-<h3 class="text-gray-900 dark:text-white text-xl font-bold mb-2">Hello World</h3>
-<p class="text-gray-600 dark:text-gray-400">
-                            Wrote my first line of HTML. Built a portfolio for a friend's photography business. It was ugly, non-responsive, and riddled with inline CSS—but it was <em>mine</em>.
-                        </p>
-</div>
-<div class="flex flex-col items-center gap-1">
-<div class="size-12 rounded-full bg-white dark:bg-surface-dark border-2 border-gray-300 dark:border-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-400 z-10 group-hover:border-primary transition-colors">
-<span class="material-symbols-outlined text-[24px]">school</span>
-</div>
-<div class="w-[2px] bg-gray-200 dark:bg-gray-800 h-full grow my-2"></div>
-</div>
-<div class="flex flex-col pb-12 pt-1 pl-4">
-<span class="text-gray-500 dark:text-gray-400 font-bold text-sm tracking-wide uppercase mb-1">2018 - Education</span>
-<h3 class="text-gray-900 dark:text-white text-xl font-bold mb-2">Formalizing the Craft</h3>
-<p class="text-gray-600 dark:text-gray-400">
-                            Graduated with a degree in Information Technology. While university taught me algorithms and data structures, the late nights at hackathons taught me how to actually ship products.
-                        </p>
-</div>
-<div class="flex flex-col items-center gap-1">
-<div class="size-12 rounded-full bg-white dark:bg-surface-dark border-2 border-gray-300 dark:border-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-400 z-10">
-<span class="material-symbols-outlined text-[24px]">group_work</span>
-</div>
-<div class="w-[2px] bg-gray-200 dark:bg-gray-800 h-full grow my-2"></div>
-</div>
-<div class="flex flex-col pb-12 pt-1 pl-4">
-<span class="text-gray-500 dark:text-gray-400 font-bold text-sm tracking-wide uppercase mb-1">2020 - Leadership</span>
-<h3 class="text-gray-900 dark:text-white text-xl font-bold mb-2">The First Big Challenge</h3>
-<p class="text-gray-600 dark:text-gray-400">
-                            Promoted to Team Lead. Tasked with migrating a monolithic PHP application to a microservices architecture. Learned that code is easy, but people and processes are the real challenge.
-                        </p>
-</div>
-<div class="flex flex-col items-center gap-1 pb-1">
-<div class="size-12 rounded-full bg-primary text-white flex items-center justify-center z-10 shadow-lg shadow-primary/40 ring-4 ring-primary/20">
-<span class="material-symbols-outlined text-[24px]">rocket_launch</span>
-</div>
-</div>
-<div class="flex flex-col pt-1 pl-4">
-<span class="text-primary font-bold text-sm tracking-wide uppercase mb-1">Present - Innovation</span>
-<h3 class="text-gray-900 dark:text-white text-xl font-bold mb-2">Architecting the Future</h3>
-<p class="text-gray-600 dark:text-gray-400">
-                            Currently specializing in the React/Next.js ecosystem and Serverless edge computing. Contributing to open source and helping startups scale from 0 to 1.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-<section class="px-4 py-20 bg-background-light dark:bg-background-dark">
-<div class="max-w-[960px] mx-auto flex flex-col gap-12">
-<div class="text-center">
-<h2 class="text-gray-900 dark:text-white text-3xl font-bold mb-4">Hard-Earned Lessons</h2>
-<p class="text-gray-600 dark:text-gray-400">The path wasn't always smooth. Here are the obstacles that became my greatest teachers.</p>
-</div>
-<div class="grid md:grid-cols-2 gap-8">
-<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-center gap-3 mb-4">
-<div class="p-2 bg-red-100 dark:bg-red-900/30 rounded-lg text-red-600 dark:text-red-400">
-<span class="material-symbols-outlined">warning</span>
-</div>
-<h3 class="text-lg font-bold text-gray-900 dark:text-white">The "Perfect Code" Trap</h3>
-</div>
-<p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
-<strong>Challenge:</strong> Early in my career, I would delay shipping features because the code wasn't "elegant" enough.
-                        </p>
-<div class="pl-4 border-l-2 border-primary">
-<p class="text-gray-700 dark:text-gray-200 font-medium text-sm">
-<strong>Lesson:</strong> "Done is better than perfect." I learned to iterate. Ship the MVP, gather feedback, and refactor later. Value delivered to users &gt; Beautiful code in a repo.
-                            </p>
-</div>
-</div>
-<div class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow">
-<div class="flex items-center gap-3 mb-4">
-<div class="p-2 bg-amber-100 dark:bg-amber-900/30 rounded-lg text-amber-600 dark:text-amber-400">
-<span class="material-symbols-outlined">bug_report</span>
-</div>
-<h3 class="text-lg font-bold text-gray-900 dark:text-white">The Production Crash</h3>
-</div>
-<p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
-<strong>Challenge:</strong> A database migration I wrote locked a production table for 2 hours during peak traffic. Panic ensued.
-                        </p>
-<div class="pl-4 border-l-2 border-primary">
-<p class="text-gray-700 dark:text-gray-200 font-medium text-sm">
-<strong>Lesson:</strong> Always test with production-scale data. Observability and robust rollback strategies are not optional extras—they are the foundation of reliability.
-                            </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="px-4 py-20 bg-surface-light dark:bg-surface-dark">
-<div class="max-w-[960px] mx-auto flex flex-col gap-10">
-<div class="flex flex-col items-center gap-2 mb-4">
-<span class="text-primary font-bold tracking-widest uppercase text-sm">My Approach</span>
-<h2 class="text-gray-900 dark:text-white text-3xl font-bold text-center">Core Philosophy</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<div class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-border-light dark:border-border-dark flex flex-col gap-4 hover:border-primary/50 transition-colors group">
-<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined">clean_hands</span>
-</div>
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Clean Code</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                            I believe code is written for humans first. If the logic isn't clear to a junior developer, it's not done. Maintainability &gt; Cleverness.
-                        </p>
-</div>
-<div class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-border-light dark:border-border-dark flex flex-col gap-4 hover:border-primary/50 transition-colors group">
-<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined">psychology</span>
-</div>
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Problem Solver</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                            I don't just take tickets. I ask "Why?". Understanding the business problem often reveals that the best code is no code at all.
-                        </p>
-</div>
-<div class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-border-light dark:border-border-dark flex flex-col gap-4 hover:border-primary/50 transition-colors group">
-<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-<span class="material-symbols-outlined">speed</span>
-</div>
-<h3 class="text-xl font-bold text-gray-900 dark:text-white">Performance</h3>
-<p class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                            Performance is a feature. I optimize critical paths, minimize bundle sizes, and ensure accessible, fast experiences for every user.
-                        </p>
-</div>
-</div>
-</div>
-</section>
-<section class="px-4 py-20 bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark">
-<div class="max-w-[960px] mx-auto">
-<h2 class="text-gray-900 dark:text-white text-3xl font-bold text-center mb-12">What People Say</h2>
-<div class="grid md:grid-cols-3 gap-6">
-<div class="flex flex-col gap-4 p-6 bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all">
-<div class="text-primary flex gap-1">
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-</div>
-<p class="text-gray-600 dark:text-gray-300 italic text-sm leading-relaxed">
-                            "Alex transformed our buggy MVP into a scalable product that handled our Series A launch without a hitch. A true professional."
-                        </p>
-<div class="mt-auto flex items-center gap-3">
-<div class="size-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center font-bold text-gray-500">JD</div>
-<div>
-<p class="text-gray-900 dark:text-white font-bold text-sm">John Doe</p>
-<p class="text-gray-500 dark:text-gray-400 text-xs">CTO @ TechStart</p>
-</div>
-</div>
-</div>
-<div class="flex flex-col gap-4 p-6 bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all">
-<div class="text-primary flex gap-1">
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-</div>
-<p class="text-gray-600 dark:text-gray-300 italic text-sm leading-relaxed">
-                            "Rare to find a developer who cares as much about the design details as the backend logic. The result was Pixel Perfect."
-                        </p>
-<div class="mt-auto flex items-center gap-3">
-<div class="size-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center font-bold text-gray-500">SM</div>
-<div>
-<p class="text-gray-900 dark:text-white font-bold text-sm">Sarah Miller</p>
-<p class="text-gray-500 dark:text-gray-400 text-xs">Product Manager</p>
-</div>
-</div>
-</div>
-<div class="flex flex-col gap-4 p-6 bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all">
-<div class="text-primary flex gap-1">
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-<span class="material-symbols-outlined text-sm">star</span>
-</div>
-<p class="text-gray-600 dark:text-gray-300 italic text-sm leading-relaxed">
-                            "Communication was excellent throughout the project. Alex explained technical constraints clearly and offered smart alternatives."
-                        </p>
-<div class="mt-auto flex items-center gap-3">
-<div class="size-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center font-bold text-gray-500">ML</div>
-<div>
-<p class="text-gray-900 dark:text-white font-bold text-sm">Mike Lee</p>
-<p class="text-gray-500 dark:text-gray-400 text-xs">Founder @ Agency</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="py-32 px-6 bg-cover bg-center relative bg-fixed" data-alt="Abstract digital blue mesh network background representing connectivity" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKnWnkmrKLkNb0rcrvi4gg2f_rYv0hnnIJG08KMFkr0x48pPc0WOcLVC1OcMOhbLF6NSB51bzFImSIKOBpuw1wRgRQVSyKWN89jzE_9bDcr1KlhJCeiNU9l713bs_VbaoI11tuzBaYZQCmWKZnbylMMBJPaENLhyf1CANQBQGk9RrbQzjB3eBz-l9mWEruAb3hzqy1m5N_cADjJjrQleR4A80LR8uR-NACU5et4bq6RAreyOoQcqyhcIP9mLgCdPyLx7Vg8muSavM');">
-<div class="absolute inset-0 bg-background-dark/90"></div>
-<div class="relative z-10 max-w-4xl mx-auto text-center flex flex-col gap-8">
-<div>
-<span class="material-symbols-outlined text-primary text-6xl mb-6 opacity-80">auto_awesome</span>
-<h2 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
-                        "The Future is Collaborative"
-                    </h2>
-<p class="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-                        I am currently exploring the intersection of <strong>AI and Web Development</strong>. My goal is to build tools that augment human creativity rather than replace it. I am always open to discussing new ideas, wild theories, and the next big thing.
-                    </p>
-</div>
-</div>
-</section>
-<section class="px-4 py-16 bg-surface-light dark:bg-surface-dark">
-<div class="max-w-[960px] mx-auto text-center">
-<p class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-8">My Technical Toolkit</p>
-<div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-500">
-<div class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-4xl">html</span>
-<span class="text-xs font-bold">HTML5</span>
-</div>
-<div class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-4xl">css</span>
-<span class="text-xs font-bold">CSS3</span>
-</div>
-<div class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-4xl">javascript</span>
-<span class="text-xs font-bold">JavaScript</span>
-</div>
-<div class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-4xl">code_blocks</span>
-<span class="text-xs font-bold">React</span>
-</div>
-<div class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-4xl">dns</span>
-<span class="text-xs font-bold">Node.js</span>
-</div>
-<div class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-4xl">database</span>
-<span class="text-xs font-bold">SQL</span>
-</div>
-<div class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer">
-<span class="material-symbols-outlined text-4xl">cloud</span>
-<span class="text-xs font-bold">AWS</span>
-</div>
-</div>
-</div>
-</section>
-<section class="px-4 py-24 bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark">
-<div class="max-w-[700px] mx-auto text-center flex flex-col gap-6 items-center">
-<div class="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2 animate-bounce">
-<span class="material-symbols-outlined text-3xl">mail</span>
-</div>
-<h2 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-black">Let's write the next chapter together.</h2>
-<p class="text-gray-600 dark:text-gray-300 text-lg">
-                    Whether you have a project in mind or just want to chat about tech, I'd love to hear from you.
+  </head>
+  <body
+    class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-white font-display overflow-x-hidden transition-colors duration-300"
+  >
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+      <header
+        class="sticky top-0 z-50 w-full border-b border-border-light dark:border-border-dark bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md"
+      >
+        <div
+          class="flex items-center justify-between whitespace-nowrap px-6 py-4 lg:px-10"
+        >
+          <div class="flex items-center gap-4">
+            <div class="size-8 text-primary">
+              <svg
+                class="w-full h-full"
+                fill="none"
+                viewBox="0 0 48 48"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+            >
+              DevPortfolio
+            </h2>
+          </div>
+          <div class="hidden md:flex flex-1 justify-end gap-8">
+            <div class="flex items-center gap-6 lg:gap-9">
+              <a
+                class="text-gray-600 dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors"
+                href="#"
+                >Home</a
+              >
+              <a
+                class="text-primary text-sm font-bold leading-normal transition-colors"
+                href="#"
+                >About Me</a
+              >
+              <a
+                class="text-gray-600 dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors"
+                href="#"
+                >Projects</a
+              >
+              <a
+                class="text-gray-600 dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors"
+                href="#"
+                >Blog</a
+              >
+              <a
+                class="text-gray-600 dark:text-gray-300 hover:text-primary text-sm font-medium leading-normal transition-colors"
+                href="#"
+                >Contact</a
+              >
+            </div>
+            <div class="flex gap-2">
+              <button
+                class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-200 dark:bg-surface-dark text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-800 transition-colors"
+              >
+                <span class="material-symbols-outlined text-[20px]"
+                  >translate</span
+                >
+              </button>
+              <button
+                class="flex items-center justify-center rounded-lg h-10 w-10 bg-gray-200 dark:bg-surface-dark text-gray-900 dark:text-white hover:bg-gray-300 dark:hover:bg-gray-800 transition-colors"
+              >
+                <span class="material-symbols-outlined text-[20px]"
+                  >dark_mode</span
+                >
+              </button>
+            </div>
+          </div>
+          <button
+            class="md:hidden flex items-center justify-center rounded-lg h-10 w-10 text-gray-900 dark:text-white"
+          >
+            <span class="material-symbols-outlined text-[24px]">menu</span>
+          </button>
+        </div>
+      </header>
+      <main class="flex-1">
+        <section
+          class="px-4 py-16 md:px-10 lg:px-40 flex justify-center bg-surface-light dark:bg-surface-dark border-b border-border-light dark:border-border-dark"
+        >
+          <div class="flex flex-col max-w-[960px] flex-1">
+            <div class="@container">
+              <div class="flex flex-col gap-8 items-center text-center py-10">
+                <div
+                  class="flex items-center gap-2 text-primary bg-primary/10 px-4 py-1.5 rounded-full mb-2"
+                >
+                  <span class="material-symbols-outlined text-sm"
+                    >history_edu</span
+                  >
+                  <span class="text-xs font-bold uppercase tracking-widest"
+                    >My Personal Story</span
+                  >
+                </div>
+                <h1
+                  class="text-gray-900 dark:text-white text-4xl font-black leading-tight tracking-[-0.033em] md:text-5xl lg:text-7xl max-w-4xl"
+                >
+                  Behind the Code: <br class="hidden md:block" />
+                  A Journey of Curiosity.
+                </h1>
+                <p
+                  class="text-gray-600 dark:text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl mx-auto"
+                >
+                  I'm Alex, a developer who believes that every line of code
+                  tells a story. This is a deep dive into how I went from
+                  tinkering with HTML to architecting scalable systems, and the
+                  lessons learned along the way.
                 </p>
-<div class="flex flex-wrap justify-center gap-4 mt-6">
-<button class="flex items-center gap-2 rounded-lg h-14 px-8 bg-primary hover:bg-blue-600 text-white text-lg font-bold shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all">
-<span>Start a Conversation</span>
-<span class="material-symbols-outlined text-sm">arrow_forward</span>
-</button>
-<button class="flex items-center gap-2 rounded-lg h-14 px-8 bg-transparent border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-900 dark:text-white text-lg font-bold transition-all">
-<span>View Resume</span>
-<span class="material-symbols-outlined text-sm">download</span>
-</button>
-</div>
-</div>
-</section>
-</main>
-</div>
-
-</body></html>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="px-4 py-8 bg-background-light dark:bg-background-dark border-b border-border-light dark:border-border-dark"
+        >
+          <div
+            class="max-w-[960px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-8"
+          >
+            <div class="flex flex-col items-center text-center">
+              <span class="text-3xl font-black text-primary">5+</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 font-medium"
+                >Years Experience</span
+              >
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <span class="text-3xl font-black text-primary">40+</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 font-medium"
+                >Projects Shipped</span
+              >
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <span class="text-3xl font-black text-primary">12</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 font-medium"
+                >Open Source Contribs</span
+              >
+            </div>
+            <div class="flex flex-col items-center text-center">
+              <span class="text-3xl font-black text-primary">∞</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 font-medium"
+                >Curiosity</span
+              >
+            </div>
+          </div>
+        </section>
+        <section class="px-4 py-20 md:px-10 lg:px-40 flex justify-center">
+          <div
+            class="max-w-[960px] w-full grid md:grid-cols-2 gap-12 items-center"
+          >
+            <div
+              class="relative group w-full aspect-[4/5] md:aspect-square rounded-2xl overflow-hidden shadow-2xl"
+            >
+              <div
+                class="absolute inset-0 bg-primary/20 mix-blend-overlay z-10"
+              ></div>
+              <div
+                class="w-full h-full bg-center bg-cover bg-no-repeat transition-transform duration-700 group-hover:scale-105"
+                data-alt="Portrait of a developer working in a modern office setup with warm lighting"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAW__BnID-JtvZue1iglmK9CSbUL-MevXbusdcY1QY2z0-bkKV2RBKI4rP1-zNofi9M42sk16UvnwMznMW8vnxxezDlNWBIwLxA3pgrBuAbb5DPH5_XDDM0X5EePBCHAf2zQATmPVmxgWJ3sgq3CzH3E5Q5zZ1Yu41V5OPBJeiK2JvjKtYS_F6-T6ob-r_SrGWg1KsgoZBOUTPcT8gdV8N6RFb-ai9vy-KaZLbD_qwjXqe3_4OntDyDOF4ZLItOSsxDXcJloRAxHNM');
+                "
+              ></div>
+              <div
+                class="absolute bottom-6 left-6 right-6 bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-md p-4 rounded-xl border border-white/10 shadow-lg z-20"
+              >
+                <p class="text-sm text-gray-600 dark:text-gray-300 italic">
+                  "The only way to do great work is to love what you do."
+                </p>
+              </div>
+            </div>
+            <div class="flex flex-col gap-6">
+              <h2
+                class="text-3xl font-bold text-gray-900 dark:text-white leading-tight"
+              >
+                The Spark
+              </h2>
+              <div
+                class="space-y-4 text-gray-600 dark:text-gray-300 text-lg leading-relaxed"
+              >
+                <p>
+                  It all started in 2015. I wasn't studying Computer Science; I
+                  was actually a graphic design major. I felt limited by static
+                  images. I wanted my designs to <em>move</em>, to react, to
+                  live.
+                </p>
+                <p>
+                  I stumbled upon a "View Source" button on a browser. That
+                  chaotic mess of HTML tags felt like a secret language. I spent
+                  the next three months obsessed, breaking websites just to see
+                  if I could fix them.
+                </p>
+                <p>
+                  By the time I graduated, I knew my path wasn't just in making
+                  things look good, but in building the engines that power them.
+                  The transition from designer to developer gave me a unique
+                  superpower:
+                  <strong class="text-primary font-bold"
+                    >I speak both languages.</strong
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="px-4 py-20 bg-surface-light dark:bg-surface-dark border-y border-border-light dark:border-border-dark"
+        >
+          <div class="max-w-[800px] mx-auto">
+            <h2
+              class="text-gray-900 dark:text-white text-3xl md:text-4xl font-black text-center mb-4"
+            >
+              Milestones &amp; Growth
+            </h2>
+            <p
+              class="text-center text-gray-600 dark:text-gray-400 mb-16 max-w-2xl mx-auto"
+            >
+              A timeline of pivotal moments that shaped my career and technical
+              philosophy.
+            </p>
+            <div class="grid grid-cols-[40px_1fr] gap-x-6 px-4">
+              <div class="flex flex-col items-center gap-1 pt-1">
+                <div
+                  class="size-12 rounded-full bg-white dark:bg-surface-dark border-2 border-primary flex items-center justify-center text-primary z-10 shadow-lg shadow-primary/20"
+                >
+                  <span class="material-symbols-outlined text-[24px]"
+                    >terminal</span
+                  >
+                </div>
+                <div
+                  class="w-[2px] bg-gray-200 dark:bg-gray-800 h-full grow my-2"
+                ></div>
+              </div>
+              <div class="flex flex-col pb-12 pt-1 pl-4">
+                <span
+                  class="text-primary font-bold text-sm tracking-wide uppercase mb-1"
+                  >2015 - The Beginning</span
+                >
+                <h3
+                  class="text-gray-900 dark:text-white text-xl font-bold mb-2"
+                >
+                  Hello World
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                  Wrote my first line of HTML. Built a portfolio for a friend's
+                  photography business. It was ugly, non-responsive, and riddled
+                  with inline CSS—but it was <em>mine</em>.
+                </p>
+              </div>
+              <div class="flex flex-col items-center gap-1">
+                <div
+                  class="size-12 rounded-full bg-white dark:bg-surface-dark border-2 border-gray-300 dark:border-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-400 z-10 group-hover:border-primary transition-colors"
+                >
+                  <span class="material-symbols-outlined text-[24px]"
+                    >school</span
+                  >
+                </div>
+                <div
+                  class="w-[2px] bg-gray-200 dark:bg-gray-800 h-full grow my-2"
+                ></div>
+              </div>
+              <div class="flex flex-col pb-12 pt-1 pl-4">
+                <span
+                  class="text-gray-500 dark:text-gray-400 font-bold text-sm tracking-wide uppercase mb-1"
+                  >2018 - Education</span
+                >
+                <h3
+                  class="text-gray-900 dark:text-white text-xl font-bold mb-2"
+                >
+                  Formalizing the Craft
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                  Graduated with a degree in Information Technology. While
+                  university taught me algorithms and data structures, the late
+                  nights at hackathons taught me how to actually ship products.
+                </p>
+              </div>
+              <div class="flex flex-col items-center gap-1">
+                <div
+                  class="size-12 rounded-full bg-white dark:bg-surface-dark border-2 border-gray-300 dark:border-gray-700 flex items-center justify-center text-gray-500 dark:text-gray-400 z-10"
+                >
+                  <span class="material-symbols-outlined text-[24px]"
+                    >group_work</span
+                  >
+                </div>
+                <div
+                  class="w-[2px] bg-gray-200 dark:bg-gray-800 h-full grow my-2"
+                ></div>
+              </div>
+              <div class="flex flex-col pb-12 pt-1 pl-4">
+                <span
+                  class="text-gray-500 dark:text-gray-400 font-bold text-sm tracking-wide uppercase mb-1"
+                  >2020 - Leadership</span
+                >
+                <h3
+                  class="text-gray-900 dark:text-white text-xl font-bold mb-2"
+                >
+                  The First Big Challenge
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                  Promoted to Team Lead. Tasked with migrating a monolithic PHP
+                  application to a microservices architecture. Learned that code
+                  is easy, but people and processes are the real challenge.
+                </p>
+              </div>
+              <div class="flex flex-col items-center gap-1 pb-1">
+                <div
+                  class="size-12 rounded-full bg-primary text-white flex items-center justify-center z-10 shadow-lg shadow-primary/40 ring-4 ring-primary/20"
+                >
+                  <span class="material-symbols-outlined text-[24px]"
+                    >rocket_launch</span
+                  >
+                </div>
+              </div>
+              <div class="flex flex-col pt-1 pl-4">
+                <span
+                  class="text-primary font-bold text-sm tracking-wide uppercase mb-1"
+                  >Present - Innovation</span
+                >
+                <h3
+                  class="text-gray-900 dark:text-white text-xl font-bold mb-2"
+                >
+                  Architecting the Future
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                  Currently specializing in the React/Next.js ecosystem and
+                  Serverless edge computing. Contributing to open source and
+                  helping startups scale from 0 to 1.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="px-4 py-20 bg-background-light dark:bg-background-dark">
+          <div class="max-w-[960px] mx-auto flex flex-col gap-12">
+            <div class="text-center">
+              <h2 class="text-gray-900 dark:text-white text-3xl font-bold mb-4">
+                Hard-Earned Lessons
+              </h2>
+              <p class="text-gray-600 dark:text-gray-400">
+                The path wasn't always smooth. Here are the obstacles that
+                became my greatest teachers.
+              </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+              <div
+                class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center gap-3 mb-4">
+                  <div
+                    class="p-2 bg-red-100 dark:bg-red-900/30 rounded-lg text-red-600 dark:text-red-400"
+                  >
+                    <span class="material-symbols-outlined">warning</span>
+                  </div>
+                  <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                    The "Perfect Code" Trap
+                  </h3>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  <strong>Challenge:</strong> Early in my career, I would delay
+                  shipping features because the code wasn't "elegant" enough.
+                </p>
+                <div class="pl-4 border-l-2 border-primary">
+                  <p
+                    class="text-gray-700 dark:text-gray-200 font-medium text-sm"
+                  >
+                    <strong>Lesson:</strong> "Done is better than perfect." I
+                    learned to iterate. Ship the MVP, gather feedback, and
+                    refactor later. Value delivered to users &gt; Beautiful code
+                    in a repo.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="bg-surface-light dark:bg-surface-dark p-8 rounded-2xl border border-border-light dark:border-border-dark shadow-sm hover:shadow-md transition-shadow"
+              >
+                <div class="flex items-center gap-3 mb-4">
+                  <div
+                    class="p-2 bg-amber-100 dark:bg-amber-900/30 rounded-lg text-amber-600 dark:text-amber-400"
+                  >
+                    <span class="material-symbols-outlined">bug_report</span>
+                  </div>
+                  <h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                    The Production Crash
+                  </h3>
+                </div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  <strong>Challenge:</strong> A database migration I wrote
+                  locked a production table for 2 hours during peak traffic.
+                  Panic ensued.
+                </p>
+                <div class="pl-4 border-l-2 border-primary">
+                  <p
+                    class="text-gray-700 dark:text-gray-200 font-medium text-sm"
+                  >
+                    <strong>Lesson:</strong> Always test with production-scale
+                    data. Observability and robust rollback strategies are not
+                    optional extras—they are the foundation of reliability.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="px-4 py-20 bg-surface-light dark:bg-surface-dark">
+          <div class="max-w-[960px] mx-auto flex flex-col gap-10">
+            <div class="flex flex-col items-center gap-2 mb-4">
+              <span
+                class="text-primary font-bold tracking-widest uppercase text-sm"
+                >My Approach</span
+              >
+              <h2
+                class="text-gray-900 dark:text-white text-3xl font-bold text-center"
+              >
+                Core Philosophy
+              </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div
+                class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-border-light dark:border-border-dark flex flex-col gap-4 hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined">clean_hands</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                  Clean Code
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm"
+                >
+                  I believe code is written for humans first. If the logic isn't
+                  clear to a junior developer, it's not done. Maintainability
+                  &gt; Cleverness.
+                </p>
+              </div>
+              <div
+                class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-border-light dark:border-border-dark flex flex-col gap-4 hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined">psychology</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                  Problem Solver
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm"
+                >
+                  I don't just take tickets. I ask "Why?". Understanding the
+                  business problem often reveals that the best code is no code
+                  at all.
+                </p>
+              </div>
+              <div
+                class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-border-light dark:border-border-dark flex flex-col gap-4 hover:border-primary/50 transition-colors group"
+              >
+                <div
+                  class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors"
+                >
+                  <span class="material-symbols-outlined">speed</span>
+                </div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                  Performance
+                </h3>
+                <p
+                  class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm"
+                >
+                  Performance is a feature. I optimize critical paths, minimize
+                  bundle sizes, and ensure accessible, fast experiences for
+                  every user.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="px-4 py-20 bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark"
+        >
+          <div class="max-w-[960px] mx-auto">
+            <h2
+              class="text-gray-900 dark:text-white text-3xl font-bold text-center mb-12"
+            >
+              What People Say
+            </h2>
+            <div class="grid md:grid-cols-3 gap-6">
+              <div
+                class="flex flex-col gap-4 p-6 bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all"
+              >
+                <div class="text-primary flex gap-1">
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                </div>
+                <p
+                  class="text-gray-600 dark:text-gray-300 italic text-sm leading-relaxed"
+                >
+                  "Alex transformed our buggy MVP into a scalable product that
+                  handled our Series A launch without a hitch. A true
+                  professional."
+                </p>
+                <div class="mt-auto flex items-center gap-3">
+                  <div
+                    class="size-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center font-bold text-gray-500"
+                  >
+                    JD
+                  </div>
+                  <div>
+                    <p class="text-gray-900 dark:text-white font-bold text-sm">
+                      John Doe
+                    </p>
+                    <p class="text-gray-500 dark:text-gray-400 text-xs">
+                      CTO @ TechStart
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-4 p-6 bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all"
+              >
+                <div class="text-primary flex gap-1">
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                </div>
+                <p
+                  class="text-gray-600 dark:text-gray-300 italic text-sm leading-relaxed"
+                >
+                  "Rare to find a developer who cares as much about the design
+                  details as the backend logic. The result was Pixel Perfect."
+                </p>
+                <div class="mt-auto flex items-center gap-3">
+                  <div
+                    class="size-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center font-bold text-gray-500"
+                  >
+                    SM
+                  </div>
+                  <div>
+                    <p class="text-gray-900 dark:text-white font-bold text-sm">
+                      Sarah Miller
+                    </p>
+                    <p class="text-gray-500 dark:text-gray-400 text-xs">
+                      Product Manager
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex flex-col gap-4 p-6 bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-transparent hover:border-primary/20 transition-all"
+              >
+                <div class="text-primary flex gap-1">
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                  <span class="material-symbols-outlined text-sm">star</span>
+                </div>
+                <p
+                  class="text-gray-600 dark:text-gray-300 italic text-sm leading-relaxed"
+                >
+                  "Communication was excellent throughout the project. Alex
+                  explained technical constraints clearly and offered smart
+                  alternatives."
+                </p>
+                <div class="mt-auto flex items-center gap-3">
+                  <div
+                    class="size-10 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center font-bold text-gray-500"
+                  >
+                    ML
+                  </div>
+                  <div>
+                    <p class="text-gray-900 dark:text-white font-bold text-sm">
+                      Mike Lee
+                    </p>
+                    <p class="text-gray-500 dark:text-gray-400 text-xs">
+                      Founder @ Agency
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="py-32 px-6 bg-cover bg-center relative bg-fixed"
+          data-alt="Abstract digital blue mesh network background representing connectivity"
+          style="
+            background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCKnWnkmrKLkNb0rcrvi4gg2f_rYv0hnnIJG08KMFkr0x48pPc0WOcLVC1OcMOhbLF6NSB51bzFImSIKOBpuw1wRgRQVSyKWN89jzE_9bDcr1KlhJCeiNU9l713bs_VbaoI11tuzBaYZQCmWKZnbylMMBJPaENLhyf1CANQBQGk9RrbQzjB3eBz-l9mWEruAb3hzqy1m5N_cADjJjrQleR4A80LR8uR-NACU5et4bq6RAreyOoQcqyhcIP9mLgCdPyLx7Vg8muSavM');
+          "
+        >
+          <div class="absolute inset-0 bg-background-dark/90"></div>
+          <div
+            class="relative z-10 max-w-4xl mx-auto text-center flex flex-col gap-8"
+          >
+            <div>
+              <span
+                class="material-symbols-outlined text-primary text-6xl mb-6 opacity-80"
+                >auto_awesome</span
+              >
+              <h2
+                class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6"
+              >
+                "The Future is Collaborative"
+              </h2>
+              <p
+                class="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto"
+              >
+                I am currently exploring the intersection of
+                <strong>AI and Web Development</strong>. My goal is to build
+                tools that augment human creativity rather than replace it. I am
+                always open to discussing new ideas, wild theories, and the next
+                big thing.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="px-4 py-16 bg-surface-light dark:bg-surface-dark">
+          <div class="max-w-[960px] mx-auto text-center">
+            <p
+              class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-8"
+            >
+              My Technical Toolkit
+            </p>
+            <div
+              class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-70 grayscale hover:grayscale-0 transition-all duration-500"
+            >
+              <div
+                class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer"
+              >
+                <span class="material-symbols-outlined text-4xl">html</span>
+                <span class="text-xs font-bold">HTML5</span>
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer"
+              >
+                <span class="material-symbols-outlined text-4xl">css</span>
+                <span class="text-xs font-bold">CSS3</span>
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer"
+              >
+                <span class="material-symbols-outlined text-4xl"
+                  >javascript</span
+                >
+                <span class="text-xs font-bold">JavaScript</span>
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer"
+              >
+                <span class="material-symbols-outlined text-4xl"
+                  >code_blocks</span
+                >
+                <span class="text-xs font-bold">React</span>
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer"
+              >
+                <span class="material-symbols-outlined text-4xl">dns</span>
+                <span class="text-xs font-bold">Node.js</span>
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer"
+              >
+                <span class="material-symbols-outlined text-4xl">database</span>
+                <span class="text-xs font-bold">SQL</span>
+              </div>
+              <div
+                class="flex flex-col items-center gap-2 hover:text-primary transition-colors cursor-pointer"
+              >
+                <span class="material-symbols-outlined text-4xl">cloud</span>
+                <span class="text-xs font-bold">AWS</span>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="px-4 py-24 bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark"
+        >
+          <div
+            class="max-w-[700px] mx-auto text-center flex flex-col gap-6 items-center"
+          >
+            <div
+              class="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2 animate-bounce"
+            >
+              <span class="material-symbols-outlined text-3xl">mail</span>
+            </div>
+            <h2
+              class="text-gray-900 dark:text-white text-3xl md:text-5xl font-black"
+            >
+              Let's write the next chapter together.
+            </h2>
+            <p class="text-gray-600 dark:text-gray-300 text-lg">
+              Whether you have a project in mind or just want to chat about
+              tech, I'd love to hear from you.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+              <button
+                class="flex items-center gap-2 rounded-lg h-14 px-8 bg-primary hover:bg-blue-600 text-white text-lg font-bold shadow-xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all"
+              >
+                <span>Start a Conversation</span>
+                <span class="material-symbols-outlined text-sm"
+                  >arrow_forward</span
+                >
+              </button>
+              <button
+                class="flex items-center gap-2 rounded-lg h-14 px-8 bg-transparent border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 text-gray-900 dark:text-white text-lg font-bold transition-all"
+              >
+                <span>View Resume</span>
+                <span class="material-symbols-outlined text-sm">download</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
