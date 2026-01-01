@@ -8,6 +8,7 @@ import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { PaletteSwitcher } from "@/components/layout/PaletteSwitcher";
 import { webRoutes } from "@/constants/route";
 import { BatteryFull } from "lucide-react";
+import { QuickContact } from "./QuickContact";
 
 export function Header() {
   return (
@@ -54,15 +55,7 @@ export function Header() {
               <LanguageSwitcher />
               <ThemeToggle />
               <PaletteSwitcher />
-            </div>
-
-            <div className="relative size-10 rounded-full overflow-hidden">
-              <Image
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
-                alt="Profile"
-                fill
-                className="object-cover"
-              />
+              <QuickContact />
             </div>
           </div>
 
