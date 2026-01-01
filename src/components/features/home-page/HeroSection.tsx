@@ -1,43 +1,70 @@
 import Image from "next/image";
-import Link from "next/link";
-import { Button } from "@/components/ui";
-import { webRoutes } from "@/constants/route";
+import { ArrowRight, Code } from "lucide-react";
 
-export function HeroSection() {
+export default function HeroSection() {
   return (
-    <section className="w-full py-10">
-      <div className="flex flex-col gap-6 @[480px]:gap-8 @[864px]:flex-row @[864px]:items-center">
-        <div className="flex flex-col gap-6 @[480px]:min-w-[400px] @[480px]:gap-8 @[864px]:justify-center">
-          <div className="flex flex-col gap-2 text-left">
-            <h1 className="text-4xl font-black leading-tight tracking-tight @[480px]:text-5xl">
-              Anh Nguyen
+    <section className="container relative py-16 overflow-hidden">
+      <div className="max-w-250 mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="flex flex-col gap-6 order-2 md:order-1 z-10 justify-around">
+          <div className="animate-fade-in-up">
+            <span className="inline-block px-3 py-1 mb-4 text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 rounded-full">
+              Full-Stack Developer
+            </span>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 dark:text-white leading-[1.15] mb-4">
+              Biến ý tưởng thành
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-primary to-blue-400">
+                hiện thực số.
+              </span>
             </h1>
-            <h2 className="text-primary-600 text-sm @[480px]:text-base font-normal">
-              Full-Stack Web Developer | Biến ý tưởng thành trải nghiệm số.
-            </h2>
-          </div>
-          <div className="flex flex-wrap gap-3">
-            <Button size="lg" className="min-w-21">
-              <Link href={webRoutes.projects()}>
-                Xem dự án
-              </Link>
-            </Button>
-            <Button variant="secondary" size="lg" className="min-w-21">
-              <Link href="#contact">
-                Liên hệ
-              </Link>
-            </Button>
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6 max-w-lg">
+              Chào bạn, tôi là Anh Nguyễn. Tôi không chỉ viết code, tôi xây dựng
+              các giải pháp giúp doanh nghiệp và người dùng kết nối hiệu quả hơn
+              trong thế giới kỹ thuật số.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <button className="px-6 h-12 rounded-md bg-linear-to-r from-primary to-primary-dark text-white font-bold shadow-lg shadow-primary/30 hover:shadow-primary/50 hover:-translate-y-1 transition-all duration-300 flex items-center gap-2">
+                <span>Xem hồ sơ năng lực</span>
+                <span className="material-symbols-outlined text-sm">
+                  <ArrowRight size={18}/>
+                </span>
+              </button>
+              <button className="px-6 h-12 rounded-md bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white font-bold hover:bg-gray-50 dark:hover:bg-white/10 transition-all duration-300">
+                Về tôi
+              </button>
+            </div>
           </div>
         </div>
-
-        <div className="w-full aspect-square rounded-xl overflow-hidden @[480px]:h-auto @[480px]:min-w-75 @[864px]:w-full @[864px]:max-w-md relative">
-          <Image
-            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=800&fit=crop"
-            alt="Developer working on laptop"
-            fill
-            className="object-cover"
-            priority
-          />
+        <div className="order-1 md:order-2 flex justify-center md:justify-end animate-fade-in-up delay-200 relative">
+          <div className="relative w-64 h-64 md:w-80 md:h-80">
+            <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-blue-500/20 rounded-full blur-2xl animate-pulse"></div>
+            <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-white/10 shadow-2xl">
+              <div className="w-full h-full bg-center bg-cover">
+                <Image
+                  src="/avatar.png"
+                  alt="Avatar Anh Nguyen"
+                  fill
+                  priority
+                  className="object-cover object-center"
+                ></Image>
+              </div>
+            </div>
+            <div
+              className="absolute -bottom-4 -left-4 bg-primary-light dark:bg-primary-dark p-4 rounded-xl shadow-xl border border-gray-100 dark:border-white/5 flex items-center gap-3 animate-bounce"
+              style={{ animationDuration: "3s" }}
+            >
+              <div className="bg-green-100 dark:bg-green-900/30 p-2 rounded-full text-green-600 dark:text-green-400">
+                <span className="material-symbols-outlined"><Code size={18}/></span>
+              </div>
+              <div>
+                <p className="text-xs text-gray-600 dark:text-gray-300 font-medium">
+                  Kinh nghiệm
+                </p>
+                <p className="text-sm font-bold text-gray-900 dark:text-white">
+                  5+ Năm
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
