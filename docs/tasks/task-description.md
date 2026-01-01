@@ -1,44 +1,81 @@
-## Task: Cập nhật giao diện trang Project Details theo thiết kế mới
+# Tài liệu Giao Việc - Website Portfolio Eros
 
-### Mục tiêu
+> **Ngày tạo:** 01/01/2026
 
-Cập nhật lại giao diện trang project details để phù hợp với thiết kế mới, đảm bảo trải nghiệm người dùng tốt hơn và giao diện nhất quán.
+---
 
-### Yêu cầu chi tiết
+## Mục tiêu
 
-1. **Cập nhật layout và các thành phần theo thiết kế mới:**
+Hoàn thiện các tính năng và giao diện chính cho website portfolio cá nhân, đảm bảo code sạch, dễ bảo trì, tuân thủ chuẩn UI/UX và guideline dự án.
 
-   - Điều chỉnh cấu trúc trang project details theo thiết kế đã cung cấp.
-   - Thay đổi vị trí, kích thước, hoặc thêm/bớt các component nếu cần thiết.
+## Yêu cầu chung
 
-2. **Thư viện hình ảnh (Gallery):**
+- Sử dụng Next.js, TypeScript, Tailwind CSS.
+- Ưu tiên tái sử dụng các component UI đã có sẵn.
+- Code phải dễ đọc, có chú thích khi cần thiết.
+- Responsive trên mọi thiết bị.
+- Đảm bảo hiệu năng và accessibility.
 
-   - Sử dụng thư viện **Swiper.js** để hiện thị hình ảnh dự án.
-   - Tham khảo tài liệu: https://swiperjs.com/demos#thumbs-gallery
+---
 
-3. **Phần Quote và list trong Content:**
+## Task 1: Thêm nút Scroll to Top vào FloatingActions
 
-   - Không cần bắt buộc giống với thiết kế.
-   - Có thể giữ nguyên cách hiển thị cũ, hoặc sử dụng list/block quote tuỳ ý => đẹp là được.
+**Vị trí:** src/components/layout/FloatingActions.tsx
 
-4. **Mục lục (Table of Contents):**
+### Mô tả
 
-   - Chỉ cần làm tính năng highlight/active 1 mục lục bằng cách tô màu.
-   - Chưa cần làm tính năng scroll linking hoặc click navigate đến section.
+Thêm nút scroll to top vào FloatingActions, giúp người dùng cuộn nhanh lên đầu trang.
 
-5. **Kiểm tra và testing:**
-   - Kiểm tra giao diện trên các kích thước màn hình khác nhau (responsive).
-   - Đảm bảo các tương tác hoạt động bình thường.
+### Checklist
 
-### Ghi chú
+- [ ] Thêm icon/nút scroll to top vào FloatingActions.
+- [ ] Xử lý sự kiện cuộn mượt lên đầu trang.
+- [ ] Ẩn/hiện nút hợp lý (chỉ hiện khi scroll xuống dưới).
+- [ ] Responsive và kiểm tra trên mobile/desktop.
+- [ ] Viết chú thích code nếu cần.
 
-- Giữ nguyên dữ liệu và nội dung từ phiên bản cũ.
-- Có thể tái sử dụng các component hiện có nếu phù hợp.
-- Không cần thay đổi logic hoặc routing, chỉ tập trung vào UI/UX.
+---
 
-### Kết quả mong đợi
+## Task 2: Làm trang chủ từ code html thô và ảnh design
 
-- Trang project details có giao diện mới theo thiết kế đã cung cấp (ảnh trong cùng thư mục này).
-- Gallery hình ảnh hoạt động tốt với Swiper.js.
-- Mục lục có phần active highlight.
-- Giao diện responsive và không bị lỗi.
+**Nguồn:** docs/tasks/home/
+
+### Mô tả
+
+Chuyển đổi code html thô và tham khảo ảnh design để xây dựng trang chủ bằng React/Next.js.
+
+### Checklist
+
+- [ ] Phân tích code html và ảnh design, xác định layout và các section.
+- [ ] Chuyển html sang các component React, ưu tiên dùng UI có sẵn.
+- [ ] Đảm bảo responsive, tối ưu hình ảnh.
+- [ ] Áp dụng style theo design/system design sẵn có, sử dụng Tailwind CSS.
+- [ ] Kiểm tra accessibility.
+- [ ] Refactor code nếu cần.
+
+---
+
+## Task 3: Làm trang My Story từ code html thô và ảnh design
+
+**Nguồn:** docs/tasks/story/
+
+### Mô tả
+
+Chuyển đổi code html thô và tham khảo ảnh design để xây dựng trang My Story bằng React/Next.js.
+
+### Checklist
+
+- [ ] Phân tích code html và ảnh design, xác định layout và các section.
+- [ ] Chuyển html sang các component React, ưu tiên dùng UI có sẵn.
+- [ ] Đảm bảo responsive, tối ưu hình ảnh.
+- [ ] Áp dụng style theo design/system design sẵn có, sử dụng Tailwind CSS.
+- [ ] Kiểm tra accessibility.
+- [ ] Refactor code nếu cần.
+
+---
+
+## Hướng dẫn chung
+
+- Đọc kỹ mô tả và checklist trước khi bắt đầu.
+- Nếu có vấn đề hoặc cần clarify, liên hệ anh.
+- Commit code rõ ràng, chia nhỏ từng phần nếu cần review.
