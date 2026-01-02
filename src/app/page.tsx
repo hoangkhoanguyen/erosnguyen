@@ -1,22 +1,21 @@
-import { HeroSection } from "@/components/features/home-page/HeroSection";
-import { AboutSection } from "@/components/features/home-page/AboutSection";
 import { TechStackSection } from "@/components/features/home-page/TechStackSection";
-import { FeaturedProjects } from "@/components/features/home-page/FeaturedProjects";
+import HeroSection from "@/components/features/home-page/HeroSection";
+import StoryAndValues from "@/components/features/home-page/StoryAndValues";
+import Projects from "@/components/features/home-page/Projects";
+import Blogs from "@/components/features/home-page/Blogs";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
-      <main className="mx-auto max-w-240 px-4 pt-24">
-        <div className="@container">
-          <HeroSection />
-        </div>
+    <main className="">
+      <HeroSection />
 
-        <AboutSection />
+      <StoryAndValues />
 
-        <TechStackSection />
+      <Projects />
 
-        <FeaturedProjects />
-      </main>
-    </div>
+      <TechStackSection />
+
+      <Blogs />
+    </main>
   );
 }

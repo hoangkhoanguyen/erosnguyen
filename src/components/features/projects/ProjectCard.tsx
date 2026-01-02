@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ExternalLink, Code } from "lucide-react";
+import { Code } from "lucide-react";
 import { ProjectDetail } from "@/mock/projects";
 import {
   Card,
@@ -57,17 +57,16 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </Link>
 
       <CardAction className="w-full flex gap-3 px-4">
-        <Button asChild className="flex-1">
-          <a href={project.demoUrl}>
-            <ExternalLink size={16} />
-            Live Demo
-          </a>
-        </Button>
-        <Button variant={"secondary"} className="flex-1" asChild>
-          <a href={project.sourceUrl}>
+        <Button variant={"outline"} className="flex-1" asChild>
+          <Link
+            key={project.slug}
+            href={webRoutes.projectDetail({ slug: project.slug })}
+            className="inset-0 z-10"
+            aria-label={project.title}
+          >
             <Code size={16} />
-            Mã nguồn
-          </a>
+            Xem chi tiết
+          </Link>
         </Button>
       </CardAction>
     </Card>
