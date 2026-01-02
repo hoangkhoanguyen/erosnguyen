@@ -23,9 +23,7 @@ function StatItem({ value, label }: { value: string; label: string }) {
   return (
     <div className="flex flex-col items-center text-center">
       <span className="text-3xl font-black text-primary">{value}</span>
-      <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">
-        {label}
-      </span>
+      <span className="text-sm text-muted-foreground font-medium">{label}</span>
     </div>
   );
 }
