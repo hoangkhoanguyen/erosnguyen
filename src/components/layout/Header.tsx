@@ -7,7 +7,7 @@ import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { PaletteSwitcher } from "@/components/layout/PaletteSwitcher";
 import { webRoutes } from "@/constants/route";
 import { BatteryFull } from "lucide-react";
-import { QuickContact } from "./QuickContact";
+import { QuickContact } from "../shared/contact/QuickContact";
 
 export function Header() {
   return (
