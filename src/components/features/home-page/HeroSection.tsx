@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section className="py-16 bg-background border-b border-stroke">
       <div className="flex flex-col container flex-1">
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden pt-20">
           <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Content */}
             <div className="flex flex-col gap-6 order-2 md:order-1 z-10 justify-around">
