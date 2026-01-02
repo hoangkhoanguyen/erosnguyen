@@ -79,37 +79,35 @@ export function TechStackSection() {
 
             {/* Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {techCategories.map((category) => {
-                return (
-                  <div
-                    key={category.title}
-                    className="bg-card rounded-xl p-6 border border-border shadow-sm hover:shadow-md transition-shadow"
-                  >
-                    {/* Category header */}
-                    <div className="flex items-center gap-3 mb-4 border-b border-border pb-3">
-                      <div className="p-2 rounded-lg bg-primary/10 text-primary">
-                        <DynamicIcon name={category.icon} />
-                      </div>
-                      <h3 className="font-bold text-foreground">
-                        {category.title}
-                      </h3>
+              {techCategories.map((category) => (
+                <div
+                  key={category.title}
+                  className="bg-card rounded-xl p-6 border border-border shadow-sm hover:shadow-md transition-shadow"
+                >
+                  {/* Category header */}
+                  <div className="flex items-center gap-3 mb-4 border-b border-border pb-3">
+                    <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                      <DynamicIcon name={category.icon} />
                     </div>
-
-                    {/* Tech list */}
-                    <ul className="space-y-3">
-                      {category.technologies.map((tech) => (
-                        <li key={tech.name} className="flex items-center gap-2">
-                          <Icon icon={tech.icon} className="w-5 h-5" />
-
-                          <span className="text-sm font-medium text-muted-foreground">
-                            {tech.name}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
+                    <h3 className="font-bold text-foreground">
+                      {category.title}
+                    </h3>
                   </div>
-                );
-              })}
+
+                  {/* Tech list */}
+                  <ul className="space-y-3">
+                    {category.technologies.map((tech) => (
+                      <li key={tech.name} className="flex items-center gap-2">
+                        <Icon icon={tech.icon} className="w-5 h-5" />
+
+                        <span className="text-sm font-medium text-muted-foreground">
+                          {tech.name}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
             </div>
           </div>
         </div>
