@@ -57,7 +57,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
       </Link>
 
       <CardAction className="w-full flex gap-3 px-4">
-        <Button variant={"secondary"} className="flex-1" asChild>
+        <Button variant={"outline"} className="flex-1" asChild>
           <Link
             key={project.slug}
             href={webRoutes.projectDetail({ slug: project.slug })}
