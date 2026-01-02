@@ -44,7 +44,7 @@ export default function HeroSection() {
                   </Button>
 
                   {/* Secondary CTA */}
-                  <Button variant={"secondary"} size={"lg"} className="flex-1">
+                  <Button variant={"outline"} size={"lg"} className="flex-1">
                     Về tôi
                   </Button>
                 </div>
