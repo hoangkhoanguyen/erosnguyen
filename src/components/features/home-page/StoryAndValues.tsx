@@ -2,7 +2,7 @@ import { Lightbulb, Sparkles, Gem } from "lucide-react";
 
 export default function StoryAndValues() {
   return (
-    <section className="@container relative py-20">
+    <section className="container relative py-20">
       <div className="mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row gap-12 md:gap-8 mb-16 items-end justify-between">

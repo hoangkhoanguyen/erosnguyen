@@ -8,7 +8,7 @@ export default function Projects() {
   const projects = [mockProjectDetail, mockProject2Details];
 
   return (
-    <section className="@container relative py-16 overflow-hidden">
+    <section className="container relative py-16 overflow-hidden">
       <div className="mx-auto">
         <div className="flex justify-between items-end mb-10">
           <div>
