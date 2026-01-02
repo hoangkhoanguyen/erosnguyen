@@ -1,11 +1,6 @@
 import Image from "next/image";
-import {
-  PanelsTopLeft,
-  Server,
-  Database,
-  Terminal,
-  type LucideIcon,
-} from "lucide-react";
+import { DynamicIcon } from "lucide-react/dynamic";
+import { ComponentProps } from "react";
 
 /* ================= DATA ================= */
 
@@ -25,14 +20,14 @@ type Tech =
 
 type TechCategory = {
   title: string;
-  icon: LucideIcon;
+  icon: ComponentProps<typeof DynamicIcon>["name"];
   technologies: Tech[];
 };
 
 export const techCategories: TechCategory[] = [
   {
     title: "Frontend",
-    icon: PanelsTopLeft,
+    icon: "panels-top-left",
     technologies: [
       { name: "React / Next.js", type: "image", src: "/logos/react.png" },
       { name: "TypeScript", type: "image", src: "/logos/typescript.png" },
@@ -48,7 +43,7 @@ export const techCategories: TechCategory[] = [
   },
   {
     title: "Backend",
-    icon: Server,
+    icon: "server",
     technologies: [
       { name: "Node.js", type: "image", src: "/logos/nodejs.png" },
       {
@@ -76,7 +71,7 @@ export const techCategories: TechCategory[] = [
   },
   {
     title: "Database",
-    icon: Database,
+    icon: "database",
     technologies: [
       {
         name: "PostgreSQL",
@@ -110,7 +105,7 @@ export const techCategories: TechCategory[] = [
   },
   {
     title: "Tools & DevOps",
-    icon: Terminal,
+    icon: "terminal",
     technologies: [
       { name: "Docker", type: "image", src: "/logos/docker.png" },
       {
@@ -157,7 +152,6 @@ export function TechStackSection() {
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {techCategories.map((category) => {
-            const Icon = category.icon;
 
             return (
               <div
@@ -167,7 +161,7 @@ export function TechStackSection() {
                 {/* Category header */}
                 <div className="flex items-center gap-3 mb-4 border-b border-border pb-3">
                   <div className="p-2 rounded-lg bg-primary/10 text-primary">
-                    <Icon size={20} />
+                    <DynamicIcon name={category.icon} />
                   </div>
                   <h3 className="font-bold text-foreground">
                     {category.title}
