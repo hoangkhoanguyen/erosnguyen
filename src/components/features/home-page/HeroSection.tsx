@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowRight, Code } from "lucide-react";
+import { ArrowRight, Code, Download } from "lucide-react";
 import { Button } from "@/components/ui";
 import Link from "next/link";
 
@@ -31,21 +31,15 @@ export default function HeroSection() {
 
                 <div className="flex flex-wrap gap-4">
                   {/* Primary CTA */}
-                  <Button
-                    variant={"default"}
-                    size={"lg"}
-                    className="flex-1"
-                    asChild
-                  >
-                    <Link href="#" className="inset-0 z-10">
-                      <span>Xem hồ sơ năng lực</span>
-                      <ArrowRight size={18} />
-                    </Link>
+                  <Button variant={"default"} size={"lg"} className="flex-1">
+                    Về tôi
+                    <ArrowRight size={18} />
                   </Button>
 
                   {/* Secondary CTA */}
                   <Button variant={"outline"} size={"lg"} className="flex-1">
-                    Về tôi
+                    <span>CV của tôi</span>
+                    <Download size={18} />
                   </Button>
                 </div>
               </div>
