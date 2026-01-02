@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <section className="py-16 bg-background border-b border-stroke">
       <div className="flex flex-col container flex-1">
-        <div className="container relative overflow-hidden">
+        <div className="relative overflow-hidden">
           <div className="mx-auto">
             <div className="flex justify-between items-end mb-10">
               <div>

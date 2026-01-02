@@ -4,7 +4,7 @@ export default function StoryAndValues() {
   return (
     <section className="py-20 bg-surface border-b border-stroke">
       <div className="flex flex-col container flex-1">
-        <div className="container relative">
+        <div className="relative">
           <div className="mx-auto">
             {/* Header */}
             <div className="flex flex-col md:flex-row gap-12 md:gap-8 mb-16 items-end justify-between">

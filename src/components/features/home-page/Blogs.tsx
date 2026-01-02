@@ -8,7 +8,7 @@ export default function Blogs() {
   return (
     <section className="py-16 bg-background border-stroke">
       <div className="flex flex-col container flex-1">
-        <div className="container relative overflow-hidden">
+        <div className="relative overflow-hidden">
           <div className="mx-auto">
             {/* Title */}
             <h2 className="text-2xl font-bold text-foreground mb-8 text-center">

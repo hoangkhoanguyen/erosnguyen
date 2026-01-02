@@ -64,7 +64,7 @@ export function TechStackSection() {
   return (
     <section className="py-20 bg-surface border-b border-stroke">
       <div className="flex flex-col container flex-1">
-        <div className="container relative">
+        <div className="relative">
           <div className="mx-auto">
             {/* Header */}
             <div className="text-center mb-12">
