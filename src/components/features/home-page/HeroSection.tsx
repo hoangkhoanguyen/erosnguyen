@@ -58,7 +58,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 bg-linear-to-br from-primary/20 to-primary-light/20 rounded-full blur-2xl animate-pulse" />
 
                 {/* Avatar */}
-                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-stroke shadow-2xl bg-surface">
+                <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-stroke">
                   <Image
                     src="/avatar.png"
                     alt="Avatar Anh Nguyen"
