@@ -79,7 +79,7 @@ export default async function BlogDetail({ params }: Props) {
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="px-3 py-1 bg-primary-light/30 text-primary-dark rounded-full text-sm  color-white"
+                className="px-3 py-1 bg-primary-light/20 text-primary-light rounded-full text-sm  color-white"
               >
                 #{tag}
               </span>
