@@ -136,7 +136,7 @@ export const techCategories: TechCategory[] = [
 /* ================= COMPONENT ================= */
 export function TechStackSection() {
   return (
-    <section className="container relative py-20">
+    <section className="@container relative py-20">
       <div className="mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

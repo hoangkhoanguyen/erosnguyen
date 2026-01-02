@@ -6,7 +6,7 @@ export default function Blogs() {
   const blogs = mockBlogDetail;
 
   return (
-    <section className="container relative py-16 overflow-hidden">
+    <section className="@container relative py-16 overflow-hidden">
       <div className="mx-auto">
         {/* Title */}
         <h2 className="text-2xl font-bold text-foreground mb-8 text-center">

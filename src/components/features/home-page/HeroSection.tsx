@@ -3,7 +3,7 @@ import { ArrowRight, Code } from "lucide-react";
 
 export default function HeroSection() {
   return (
-    <section className="container relative py-16 overflow-hidden">
+    <section className="@container relative py-16 overflow-hidden">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Content */}
         <div className="flex flex-col gap-6 order-2 md:order-1 z-10 justify-around">
