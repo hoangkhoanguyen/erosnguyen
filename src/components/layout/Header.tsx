@@ -4,9 +4,9 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { PaletteSwitcher } from "@/components/layout/PaletteSwitcher";
 import { webRoutes } from "@/constants/route";
-import { BatteryFull } from "lucide-react";
 import { QuickContact } from "../shared/contact/QuickContact";
 import { MobileHeaderMenu } from "./MobileHeaderMenu";
+// import Image from "next/image";
 
 export function Header() {
   return (
@@ -18,9 +18,10 @@ export function Header() {
             href={webRoutes.home()}
             className="flex items-center gap-3 text-primary"
           >
-            <div className="size-6 text-primary-600">
+            {/* <div className="size-6 text-primary-600">
               <BatteryFull />
-            </div>
+            </div> */}
+            {/* <Image src="/logo.jpg" alt="Eros Nguyen" width={32} height={32} /> */}
             <h2 className="text-lg font-bold leading-tight tracking-tight">
               Eros Nguyen
             </h2>
