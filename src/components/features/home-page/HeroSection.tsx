@@ -15,7 +15,7 @@ import { Button } from "@/components/ui";
 
 export default function HeroSection() {
   return (
-    <section className="min-h-screen relative overflow-hidden py-16 pt-24 md:py-32 md:pt-28 px-4 sm:px-10 md:px-20 lg:px-40 border-b border-stroke">
+    <section className="relative overflow-hidden py-16 pt-24 md:py-32 md:pt-28 px-4 sm:px-10 md:px-20 lg:px-40 border-b border-stroke">
       <div
         className="pointer-events-none absolute top-1/4 right-0 -z-10 h-[500px] w-[500px] animate-pulse rounded-full bg-primary/5 blur-[120px]"
         aria-hidden
