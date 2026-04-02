@@ -11,21 +11,21 @@ type SAV = {
 const SAVs: SAV[] = [
   {
     icon: "lightbulb",
-    title: "Sự tò mò dẫn lối",
+    title: "User-First Craft",
     description:
-      "Không chỉ là viết code, tôi kể chuyện qua các sản phẩm số với tư duy lấy người dùng làm trung tâm.",
+      "I design experiences that feel obvious: clear flows, thoughtful micro-interactions, and accessibility built in from the start.",
   },
   {
-    icon: "sparkles",
-    title: 'Công nghệ "Vô hình"',
+    icon: "hand-coins",
+    title: "Quality You Can Maintain",
     description:
-      "Bắt đầu từ sự hiếu kỳ về cách web vận hành. Những dòng HTML đầu tiên trên Notepad đã thắp lên đam mê kiến tạo những sản phẩm hữu hình từ code trừu tượng.",
+      "I value clean, readable code and stable contracts. Less guesswork, fewer surprises, and smoother collaboration over time.",
   },
   {
-    icon: "gem",
-    title: "Tinh tế trong đơn giản",
+    icon: "gauge",
+    title: "Performance as a Feature",
     description:
-      '"Code không chỉ để máy chạy". Sự đơn giản là đỉnh cao của sự tinh tế. Tôi viết code sạch, dễ bảo trì để đảm bảo tính bền vững cho mọi dự án.',
+      "Fast is a form of respect. I optimize critical paths with caching and smart delivery so users get responsive, reliable experiences.",
   },
 ];
 
@@ -40,16 +40,16 @@ export default function StoryAndValues() {
             </span>
 
             <h2 className="text-3xl md:text-4xl font-extrabold text-foreground leading-tight">
-              Hành trình &amp;{" "}
+              Journey &amp;{" "}
               <span className="relative inline-block">
-                Triết lý
+                philosophy
                 <span className="absolute bottom-1 left-0 w-full h-3 bg-primary/20 -z-10 rounded-sm" />
               </span>
             </h2>
 
             <p className="mt-4 text-muted-foreground text-lg">
-              Không chỉ là viết code, tôi kể chuyện qua các sản phẩm số với tư
-              duy lấy người dùng làm trung tâm.
+              More than writing code—I craft digital products with a clear focus
+              on the people who use them.
             </p>
           </div>
         </div>
@@ -65,7 +65,8 @@ export default function StoryAndValues() {
               <div
                 className={`w-12 h-12 bg-background rounded-xl flex items-center justify-center shadow-sm mb-6 text-primary group-hover:scale-110 transition-all duration-300
                 ${i % 2 === 0 ? "group-hover:rotate-3" : "group-hover:-rotate-3"}
-              `}>
+              `}
+              >
                 <DynamicIcon name={SAV.icon} />
               </div>
               <h3 className="text-xl font-bold text-foreground mb-3">

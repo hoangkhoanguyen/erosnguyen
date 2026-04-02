@@ -40,22 +40,24 @@
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
 
-  /* Default palette colors - will be overridden by JS theme switcher */
-  --pallete-primary-main: #2563eb;
-  --pallete-primary-light: #60a5fa;
-  --pallete-primary-dark: #1d4ed8;
+  /* Default = orange tone (no data-theme on <html>) */
+  --pallete-primary-main: #ea580c;
+  --pallete-primary-light: #fb923c;
+  --pallete-primary-dark: #c2410c;
 
-  --pallete-background-light: #f6f7f8;
-  --pallete-background-dark: #101822;
+  --pallete-background-light: #fffaf5;
+  --pallete-background-dark: #141211;
   --pallete-surface-light: #ffffff;
-  --pallete-surface-dark: #1a222c;
-  --pallete-border-light: #e5e7eb;
-  --pallete-border-dark: #282f39;
+  --pallete-surface-dark: #191413;
+  --pallete-border-light: #e7dfd9;
+  --pallete-border-dark: #3d342f;
+  --pallete-card-light: #ffffff;
+  --pallete-card-dark: #262220;
 
   --background: var(--pallete-background-light);
   --surface: var(--pallete-surface-light);
-  --stroke: #e5e7eb;
-  --card: var(--pallete-surface-light);
+  --stroke: var(--pallete-border-light);
+  --card: var(--pallete-card-light);
 }
 
 [data-theme="green"] {
@@ -63,29 +65,37 @@
   --pallete-primary-light: #4ade80;
   --pallete-primary-dark: #15803d;
 
-  --pallete-background-light: #f8fafc;
-  --pallete-background-dark: #0f1c15;
+  --pallete-background-light: #f5fdf7;
+  --pallete-background-dark: #0b140f;
   --pallete-surface-light: #ffffff;
-  --pallete-surface-dark: #1b2922;
+  --pallete-surface-dark: #101a14;
+  --pallete-border-light: #dce8e0;
+  --pallete-border-dark: #2a3830;
+  --pallete-card-light: #ffffff;
+  --pallete-card-dark: #1c2b24;
 }
 
-[data-theme="orange"] {
-  --pallete-primary-main: #ea580c;
-  --pallete-primary-light: #fb923c;
-  --pallete-primary-dark: #c2410c;
+[data-theme="blue"] {
+  --pallete-primary-main: #2563eb;
+  --pallete-primary-light: #60a5fa;
+  --pallete-primary-dark: #1d4ed8;
 
-  --pallete-background-light: #fffaf5;
-  --pallete-background-dark: #1c1917;
-  --pallete-surface-light: #ffffff;
-  --pallete-surface-dark: #292524;
+  --pallete-background-light: #f0f4f9;
+  --pallete-background-dark: #101822;
+  --pallete-surface-light: #fafcff;
+  --pallete-surface-dark: #161d25;
+  --pallete-border-light: #e5e7eb;
+  --pallete-border-dark: #323b49;
+  --pallete-card-light: #ffffff;
+  --pallete-card-dark: #212b38;
 }
 
 .dark {
   --background: var(--pallete-background-dark);
   --foreground: oklch(0.985 0 0);
   --surface: var(--pallete-surface-dark);
-  --stroke: #282f39;
-  --card: var(--pallete-surface-dark);
+  --stroke: var(--pallete-border-dark);
+  --card: var(--pallete-card-dark);
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.21 0.006 285.885);
   --popover-foreground: oklch(0.985 0 0);
@@ -241,8 +251,9 @@ button:not([disabled]) {
   );
   border: none;
   color: white;
-  box-shadow: 0px 5px 5px -1px color-mix(in srgb, var(--pallete-primary-main)
-          25%, transparent),
+  box-shadow:
+    0px 5px 5px -1px
+      color-mix(in srgb, var(--pallete-primary-main) 25%, transparent),
     inset 4px 4px 8px
       color-mix(in srgb, var(--pallete-primary-light) 50%, transparent);
 }
@@ -253,7 +264,9 @@ button:not([disabled]) {
 
 .btn-beautiful-primary:is(:focus, :focus-visible, :active) {
   outline: none;
-  box-shadow: 0 0 0 3px white, 0 0 0 6px var(--color-primary-main);
+  box-shadow:
+    0 0 0 3px white,
+    0 0 0 6px var(--color-primary-main);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -12,7 +12,7 @@ export default function Blogs() {
           <div className="mx-auto">
             {/* Title */}
             <h2 className="text-2xl font-bold text-foreground mb-8 text-center">
-              Bài viết mới nhất
+              Latest articles
             </h2>
 
             {/* Blog list */}
@@ -36,8 +36,8 @@ export default function Blogs() {
                     </span>
 
                     <span className="text-xs text-muted-foreground">
-                      {new Date(blog.publishedAt).toLocaleDateString("vi-VN", {
-                        day: "2-digit",
+                      {new Date(blog.publishedAt).toLocaleDateString("en-US", {
+                        day: "numeric",
                         month: "long",
                         year: "numeric",
                       })}
@@ -63,7 +63,7 @@ export default function Blogs() {
                 href="/blogs"
                 className="inline-flex items-center gap-1 text-sm font-bold text-muted-foreground hover:text-primary transition-colors"
               >
-                Đọc thêm tại Blog
+                Read more on the blog
                 <ArrowRight size={16} />
               </Link>
             </div>

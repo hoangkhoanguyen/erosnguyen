@@ -25,7 +25,7 @@ export const mockBlogDetail: BlogDetail[] = [
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop",
     },
     publishedAt: "2025-12-10",
-    readingTime: "7 phút đọc",
+    readingTime: "7 min read",
     coverImage:
       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
     tags: ["React", "Hooks", "JavaScript"],
@@ -91,7 +91,7 @@ Start gradually adopting hooks in your new components. There is no need to rewri
         "https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=150&h=150&fit=crop",
     },
     publishedAt: "2025-12-11",
-    readingTime: "3 phút đọc",
+    readingTime: "3 min read",
     coverImage:
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1200&h=600&fit=crop",
     tags: ["React"],

@@ -23,39 +23,40 @@ export interface ProjectDetail {
 
 export const mockProjectDetail: ProjectDetail = {
   id: "1",
-  title: "Tên dự án",
+  title: "Flagship product platform",
   slug: "ten-du-an",
-  description: "Một dòng mô tả ngắn gọn và hấp dẫn về dự án.",
+  description:
+    "An end-to-end web product with a modern UI, pragmatic architecture, and room to grow.",
   images: [
     {
       url: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
-      title: "Giao diện chính",
-      subtitle: "Thiết kế chính c",
+      title: "Main dashboard",
+      subtitle: "Primary application layout and navigation",
     },
     {
       url: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop",
-      title: "Phân tích dữ liệu",
-      subtitle: "Màn hình hiển thị thống kê và biểu đồ",
+      title: "Analytics",
+      subtitle: "Stats and charting views",
     },
     {
       url: "https://images.unsplash.com/photo-1661288378926-30c78e59560c?w=800&h=600&fit=crop",
-      title: "Quản lý người dùng",
-      subtitle: "Giao diện quản lý tài khoản và quyền truy cập",
+      title: "User management",
+      subtitle: "Accounts, roles, and permissions",
     },
     {
       url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop",
-      title: "Cài đặt hệ thống",
-      subtitle: "Màn hình cấu hình và tùy chỉnh",
+      title: "System settings",
+      subtitle: "Configuration and preferences",
     },
     {
       url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop",
-      title: "Bảng điều khiển",
-      subtitle: "Tổng quan về các hoạt động và trạng thái hệ thống",
+      title: "Control center",
+      subtitle: "Overview of activity and system health",
     },
   ],
   projectInfo: {
-    status: "Fullstack Developer",
-    timeline: "Tháng 8, 2023 - Tháng 12, 2023",
+    status: "Full-stack",
+    timeline: "Aug 2023 – Dec 2023",
     technologies: ["React", "Node.js", "Tailwind CSS", "PostgreSQL", "Docker"],
   },
   tags: ["React", "Node.js", "Tailwind CSS", "PostgreSQL", "Docker"],
@@ -127,8 +128,8 @@ Quy trình phát triển tập trung vào trải nghiệm người dùng, đảm
 export const mockProject2Details: ProjectDetail = {
   ...mockProjectDetail,
   id: "2",
-  title: "Dự án Thứ hai ba tuwj aml fns lkms lkma;e ;lmv;ls",
+  title: "Content & marketing site",
   slug: "du-an-thu-hai",
   description:
-    "Mô tả ngắn gọn về dự án thứ hai với các tính năng nổi bật và công nghệ sử dụng.",
+    "A fast, minimal marketing site focused on storytelling, SEO, and a smooth reading experience.",
 };

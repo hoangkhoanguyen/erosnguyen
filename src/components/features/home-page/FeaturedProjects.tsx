@@ -60,13 +60,13 @@ export function FeaturedProjects() {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {project.description}
               </p>
-              <Link
+              {/* <Link
                 href={webRoutes.projectDetail({ slug: project.link })}
                 className="inline-flex items-center gap-1 text-primary-600 hover:text-primary-700 font-medium text-sm transition-colors"
               >
                 Xem chi tiết
                 <span className="text-base">→</span>
-              </Link>
+              </Link> */}
             </div>
           </div>
         ))}

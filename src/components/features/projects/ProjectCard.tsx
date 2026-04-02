@@ -40,7 +40,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         <CardHeader className="pt-4 px-4">
-          <CardTitle className="text-xl line-clamp-1 group-hover:text-primary-light duration-300">
+          <CardTitle className="text-xl line-clamp-1 group-hover:text-primary duration-300">
             {project.title}
           </CardTitle>
 
@@ -56,7 +56,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </CardHeader>
       </Link>
 
-      <CardAction className="w-full flex gap-3 px-4">
+      {/* <CardAction className="w-full flex gap-3 px-4">
         <Button variant={"outline"} className="flex-1" asChild>
           <Link
             key={project.slug}
@@ -65,10 +65,10 @@ export default function ProjectCard({ project }: ProjectCardProps) {
             aria-label={project.title}
           >
             <Code size={16} />
-            Xem chi tiết
+            View details
           </Link>
         </Button>
-      </CardAction>
+      </CardAction> */}
     </Card>
   );
 }

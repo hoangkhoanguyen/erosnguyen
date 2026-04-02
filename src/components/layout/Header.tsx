@@ -1,13 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { Button } from "../ui";
-import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { ThemeToggle } from "@/components/layout/ThemeToggle";
 import { PaletteSwitcher } from "@/components/layout/PaletteSwitcher";
 import { webRoutes } from "@/constants/route";
 import { BatteryFull } from "lucide-react";
 import { QuickContact } from "../shared/contact/QuickContact";
+import { MobileHeaderMenu } from "./MobileHeaderMenu";
 
 export function Header() {
   return (
@@ -31,22 +30,28 @@ export function Header() {
           <div className="hidden md:flex flex-1 justify-end items-center gap-8">
             <nav className="flex items-center gap-9">
               <Link
+                href={webRoutes.home()}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              >
+                Home
+              </Link>
+              <Link
                 href={webRoutes.myStory()}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
-                Câu chuyện
+                My Story
               </Link>
               <Link
                 href={webRoutes.projects()}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
-                Dự án
+                Projects
               </Link>
               <Link
                 href={webRoutes.blogs()}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
-                Blog
+                Blogs
               </Link>
             </nav>
 
@@ -58,10 +63,7 @@ export function Header() {
             </div>
           </div>
 
-          {/* Mobile Menu Button */}
-          <Button variant="secondary" size="icon" className="md:hidden">
-            <span className="text-2xl">☰</span>
-          </Button>
+          <MobileHeaderMenu />
         </div>
       </div>
     </header>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { useThemeStore, themes } from "@/store/themeStore";
+import { useThemeStore } from "@/store/themeStore";
 
 /**
  * Component to initialize theme colors on mount

@@ -15,10 +15,10 @@ export default function Projects() {
             <div className="flex justify-between items-end mb-10">
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                  Dự án nổi bật
+                  Featured projects
                 </h2>
                 <p className="text-muted-foreground">
-                  Những sản phẩm tôi tâm đắc nhất
+                  Work I&apos;m most proud of
                 </p>
               </div>
 
@@ -26,7 +26,7 @@ export default function Projects() {
                 href={webRoutes.projects()}
                 className="hidden sm:flex items-center gap-1 text-primary font-bold hover:gap-2 transition-all"
               >
-                Xem tất cả
+                View all
                 <ArrowRight size={16} />
               </Link>
             </div>

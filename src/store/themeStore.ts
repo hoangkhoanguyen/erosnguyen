@@ -8,16 +8,16 @@ type ThemeColor = {
 
 export const themes: Record<string, ThemeColor> = {
   default: {
-    name: "default",
-    optionClassName: "bg-gradient-to-br from-blue-600 to-blue-400",
+    name: "orange",
+    optionClassName: "bg-gradient-to-br from-orange-600 to-orange-400",
   },
   green: {
     name: "green",
     optionClassName: "bg-gradient-to-br from-green-600 to-green-400",
   },
-  orange: {
-    name: "sunset",
-    optionClassName: "bg-gradient-to-br from-orange-600 to-orange-400",
+  blue: {
+    name: "ocean",
+    optionClassName: "bg-gradient-to-br from-blue-600 to-blue-400",
   },
 };
 
@@ -52,10 +52,12 @@ export const useThemeStore = create<ThemeStore>()(
       name: "theme-color",
       storage: createJSONStorage(() => localStorage),
       onRehydrateStorage: () => (state) => {
-        // Apply theme after rehydration
-        if (state?.currentTheme) {
-          applyTheme(state.currentTheme);
-        }
+        if (!state) return;
+        let next = state.currentTheme;
+        if (next === "orange") next = "blue";
+        if (!themes[next]) next = "default";
+        if (next !== state.currentTheme) state.currentTheme = next;
+        applyTheme(next);
       },
     },
   ),

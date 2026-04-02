@@ -69,11 +69,11 @@ export function TechStackSection() {
             {/* Header */}
             <div className="text-center mb-12">
               <h2 className="text-2xl font-bold text-foreground mb-3">
-                Công nghệ & Kỹ năng
+                Tech &amp; skills
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Bộ công cụ tôi sử dụng để xây dựng các sản phẩm chất lượng cao,
-                từ giao diện người dùng đến cơ sở hạ tầng.
+                The toolkit I use to ship high-quality products—from the UI layer
+                to infrastructure and delivery.
               </p>
             </div>
 
