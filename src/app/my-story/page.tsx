@@ -4,9 +4,9 @@ import HeroSection from "@/components/features/my-story/HeroSection";
 import MilestoneAndGrowth from "@/components/features/my-story/MilestoneAndGrowth";
 import SparkSection from "@/components/features/my-story/SparkSection";
 import StatsSection from "@/components/features/my-story/StatsSection";
-import { TechToolkitSection } from "@/components/features/my-story/TechToolkitSection";
 import { FutureCollaborativeSection } from "@/components/features/my-story/FutureCollaborativeSection";
 import { CallToActionSection } from "@/components/features/my-story/CallToActionSection";
+import { TechStackSection } from "@/components/features/home-page/TechStackSection";
 
 const page = () => {
   return (
@@ -18,7 +18,7 @@ const page = () => {
       <HardEarnedLessonsSection />
       <CorePhilosophySection />
       <FutureCollaborativeSection />
-      <TechToolkitSection />
+      <TechStackSection />
       <CallToActionSection />
     </main>
   );

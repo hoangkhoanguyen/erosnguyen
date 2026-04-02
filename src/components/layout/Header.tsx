@@ -51,7 +51,7 @@ export function Header() {
             </nav>
 
             <div className="flex gap-2">
-              <LanguageSwitcher />
+              {/* <LanguageSwitcher /> */}
               <ThemeToggle />
               <PaletteSwitcher />
               <QuickContact />

@@ -1,12 +1,13 @@
 {
-  "name": "portfolio-v3",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "docker:build": "docker buildx build --platform linux/amd64 -t portfolio:latest ."
   },
   "dependencies": {
     "@iconify/react": "^6.0.2",
