@@ -137,14 +137,14 @@ export default function HeroSection() {
               </h4>
               <div className="flex items-center justify-between">
                 <div className="flex flex-col items-center">
-                  <div className="mb-1 size-2 rounded-full bg-primary" />
+                  <div className="mb-1 size-2 rounded-full bg-muted-foreground" />
                   <span className="text-[8px] uppercase text-muted-foreground">
                     Idea
                   </span>
                 </div>
-                <div className="mx-1 h-px flex-1 bg-linear-to-r from-primary to-green-500" />
+                <div className="mx-1 h-px flex-1 bg-linear-to-r from-muted-foreground via-primary/50 to-primary" />
                 <div className="flex flex-col items-center">
-                  <div className="mb-1 size-2 rounded-full bg-green-500" />
+                  <div className="mb-1 size-2 rounded-full bg-primary" />
                   <span className="text-[8px] uppercase text-muted-foreground">
                     Live
                   </span>

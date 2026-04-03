@@ -48,8 +48,8 @@ export default function StoryAndValues() {
             </h2>
 
             <p className="mt-4 text-muted-foreground text-lg">
-              More than writing code—I craft digital products with a clear focus
-              on the people who use them.
+              More than writing code — I craft digital products with a clear
+              focus on the people who use them.
             </p>
           </div>
         </div>
