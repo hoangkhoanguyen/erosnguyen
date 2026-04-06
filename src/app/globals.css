@@ -234,6 +234,36 @@ button:not([disabled]) {
   backdrop-filter: blur(18px);
 }
 
+.fixed-bg-dot-grid {
+  background-image: radial-gradient(
+    circle,
+    var(--color-foreground) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+}
+
+.fixed-bg-spotlight {
+  background-image: radial-gradient(
+    circle,
+    var(--color-primary-main) 1px,
+    transparent 1px
+  );
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(
+    circle 200px at var(--mx, -9999px) var(--my, -9999px),
+    black 0%,
+    rgba(0, 0, 0, 0.6) 30%,
+    transparent 70%
+  );
+  mask-image: radial-gradient(
+    circle 200px at var(--mx, -9999px) var(--my, -9999px),
+    black 0%,
+    rgba(0, 0, 0, 0.6) 30%,
+    transparent 70%
+  );
+}
+
 .dark .glass-card {
   border-color: rgba(255, 255, 255, 0.14);
   background: color-mix(in srgb, var(--surface) 40%, transparent);

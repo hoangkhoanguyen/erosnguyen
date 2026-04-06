@@ -100,5 +100,23 @@ Start gradually adopting hooks in your new components. There is no need to rewri
 
     content: "Short content...",
   },
+  {
+    id: "3",
+    title: "Building a design system that actually scales across teams",
+    slug: "scalable-design-system",
+    author: {
+      name: "Eros Nguyen",
+      avatar:
+        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop",
+    },
+    publishedAt: "2025-12-15",
+    readingTime: "5 min read",
+    coverImage:
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80",
+    tags: ["Design Systems", "React", "Tailwind"],
+    excerpt:
+      "Lessons learned from building and maintaining a component library used by multiple product teams in production.",
+    content: "Full content here...",
+  },
 ]
 

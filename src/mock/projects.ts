@@ -132,4 +132,29 @@ export const mockProject2Details: ProjectDetail = {
   slug: "du-an-thu-hai",
   description:
     "A fast, minimal marketing site focused on storytelling, SEO, and a smooth reading experience.",
+  images: [
+    {
+      url: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80",
+      title: "Editor view",
+      subtitle: "Content editing interface",
+    },
+  ],
+  tags: ["Next.js", "MDX", "Vercel", "Tailwind CSS"],
+};
+
+export const mockProject3Details: ProjectDetail = {
+  ...mockProjectDetail,
+  id: "3",
+  title: "Real-time collaboration tool",
+  slug: "du-an-thu-ba",
+  description:
+    "A multiplayer workspace with live cursors, conflict-free editing, and instant sync across devices.",
+  images: [
+    {
+      url: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80",
+      title: "Collaboration view",
+      subtitle: "Live editing workspace",
+    },
+  ],
+  tags: ["React", "WebSocket", "Redis", "TypeScript"],
 };

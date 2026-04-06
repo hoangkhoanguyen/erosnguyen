@@ -62,29 +62,27 @@ export const techCategories: TechCategory[] = [
 /* ================= COMPONENT ================= */
 export function TechStackSection() {
   return (
-    <section className="py-20 bg-surface border-b border-stroke">
+    <section className="py-20">
       <div className="flex flex-col container flex-1">
         <div className="relative">
           <div className="mx-auto">
-            {/* Header */}
             <div className="text-center mb-12">
               <h2 className="text-2xl font-bold text-foreground mb-3">
-                Tech &amp; skills
+                Tech stack &amp; skills
               </h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                The toolkit I use to ship high-quality products—from the UI layer
-                to infrastructure and delivery.
+                Languages, frameworks, and tools I use across the stack—UI,
+                backend services, data, and the workflow that ships changes to
+                production.
               </p>
             </div>
 
-            {/* Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {techCategories.map((category) => (
                 <div
                   key={category.title}
                   className="bg-card rounded-xl p-6 border border-border shadow-sm hover:shadow-md transition-shadow"
                 >
-                  {/* Category header */}
                   <div className="flex items-center gap-3 mb-4 border-b border-border pb-3">
                     <div className="p-2 rounded-lg bg-primary/10 text-primary">
                       <DynamicIcon name={category.icon} />
@@ -94,7 +92,6 @@ export function TechStackSection() {
                     </h3>
                   </div>
 
-                  {/* Tech list */}
                   <ul className="space-y-3">
                     {category.technologies.map((tech) => (
                       <li key={tech.name} className="flex items-center gap-2">

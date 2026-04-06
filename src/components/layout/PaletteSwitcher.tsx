@@ -1,69 +1,62 @@
 "use client";
 
 import { Button } from "../ui";
-import { Palette, X } from "lucide-react";
-import { useState } from "react";
+import { Check, Palette } from "lucide-react";
 import { useThemeStore, themes } from "@/store/themeStore";
 import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-} from "../ui/drawer";
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "../ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 
 export function PaletteSwitcher() {
-  const [open, setOpen] = useState(false);
   const { currentTheme, setTheme } = useThemeStore();
 
   return (
-    <>
-      <Button variant="secondary" size="icon" onClick={() => setOpen(true)}>
-        <Palette className="w-5 h-5" />
-      </Button>
+    <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+        <Button variant="secondary" size="icon" aria-label="Choose color theme">
+          <Palette className="w-5 h-5" />
+        </Button>
+      </DropdownMenuTrigger>
 
-      <Drawer open={open} onOpenChange={setOpen} direction="right">
-        <DrawerContent className="h-full max-w-md ml-auto">
-          <DrawerHeader className="border-b border-border">
-            <div className="flex items-center justify-between">
-              <DrawerTitle>Chọn chủ đề</DrawerTitle>
-              <DrawerClose asChild>
-                <Button variant="ghost" size="icon">
-                  <X className="w-5 h-5" />
-                </Button>
-              </DrawerClose>
-            </div>
-          </DrawerHeader>
+      <DropdownMenuContent align="end" className="w-56">
+        <DropdownMenuLabel className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          Color Palette
+        </DropdownMenuLabel>
+        <DropdownMenuSeparator />
 
-          <div className="p-6 space-y-4">
-            {Object.entries(themes).map(([key, theme]) => (
-              <button
-                type="button"
-                title={`Change Theme Button To ${theme.name}`}
-                key={key}
-                onClick={() => {
-                  setTheme(key);
-                }}
-                className={`w-full text-left rounded-xl p-1 transition-all ${
-                  currentTheme === key
-                    ? "ring-2 ring-primary ring-offset-2 ring-offset-background"
-                    : "hover:ring-2 hover:ring-border"
-                }`}
-              >
-                <div className="relative">
-                  <div
-                    className={cn(
-                      "w-full h-24 rounded-lg",
-                      theme.optionClassName
-                    )}
-                  />
-                </div>
-              </button>
-            ))}
-          </div>
-        </DrawerContent>
-      </Drawer>
-    </>
+        <DropdownMenuRadioGroup value={currentTheme} onValueChange={setTheme}>
+          {Object.entries(themes).map(([key, theme]) => (
+            <DropdownMenuRadioItem
+              key={key}
+              value={key}
+              className="group cursor-pointer gap-3 py-2.5"
+            >
+              {/* Color preview circle */}
+              <div
+                className={cn(
+                  "size-6 rounded-full border-2 border-border shadow-sm transition-transform group-hover:scale-110",
+                  theme.optionClassName,
+                )}
+              />
+
+              {/* Theme name */}
+              <span className="flex-1 font-medium capitalize">{theme.name}</span>
+
+              {/* Active indicator – only visible when selected */}
+              {currentTheme === key && (
+                <Check className="size-4 text-primary" strokeWidth={3} />
+              )}
+            </DropdownMenuRadioItem>
+          ))}
+        </DropdownMenuRadioGroup>
+      </DropdownMenuContent>
+    </DropdownMenu>
   );
 }

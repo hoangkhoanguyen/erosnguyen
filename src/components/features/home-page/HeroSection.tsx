@@ -15,7 +15,7 @@ import { Button } from "@/components/ui";
 
 export default function HeroSection() {
   return (
-    <section className="relative overflow-hidden py-16 pt-24 md:py-32 md:pt-28 px-4 sm:px-10 md:px-20 lg:px-40 border-b border-stroke">
+    <section className="relative overflow-hidden pb-10 pt-24 px-4 sm:px-10 md:px-20 lg:px-40">
       <div
         className="pointer-events-none absolute top-1/4 right-0 -z-10 h-[500px] w-[500px] animate-pulse rounded-full bg-primary/5 blur-[120px]"
         aria-hidden
@@ -33,9 +33,9 @@ export default function HeroSection() {
               </span>
             </h1>
             <p className="mb-8 max-w-lg text-lg leading-relaxed text-muted-foreground">
-              Hi, I&apos;m Eros Nguyen. I don&apos;t just write code — I build
-              solutions that help businesses and users connect more effectively
-              in the digital world.
+              Hi, I&apos;m Eros Khoa Nguyen. I don&apos;t just write code — I
+              build products and systems that help teams ship faster and help
+              people get things done online.
             </p>
             <div className="flex flex-wrap gap-4 flex-col sm:flex-row items-stretch">
               <Button size={"xl"} asChild>
@@ -51,8 +51,8 @@ export default function HeroSection() {
           </div>
         </div>
 
-        <div className="relative flex min-h-[500px] animate-fade-in-up items-center justify-center delay-200 lg:justify-end">
-          <div className="relative h-[560px] sm:h-[450px] w-full max-w-[500px]">
+        <div className="relative flex min-h-[500px] animate-fade-in-up items-center justify-center delay-200">
+          <div className="relative h-[560px] sm:h-[450px] w-full max-w-[500px] translate-y-10">
             <div className="absolute left-0 top-0 z-20 w-52 animate-float rounded-2xl p-5 shadow-2xl glass-card transition-shadow duration-300 ease-out hover:shadow-[0_0_35px_rgba(34,197,94,0.55)]">
               <div className="mb-3 flex items-center gap-3">
                 <div className="rounded-lg bg-green-500/20 p-2 text-green-500">
@@ -63,13 +63,13 @@ export default function HeroSection() {
                 </span>
               </div>
               <h4 className="mb-2 text-sm font-bold text-foreground">
-                High-Performance
+                Fast, accessible experiences
               </h4>
               <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
                 <div className="h-full w-[94%] rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
               </div>
               <p className="mt-2 text-[10px] font-medium text-muted-foreground">
-                94/100 Lighthouse Score
+                Lighthouse 94 — speed, accessibility &amp; SEO
               </p>
             </div>
 
@@ -83,7 +83,7 @@ export default function HeroSection() {
                 </span>
               </div>
               <h4 className="mb-2 text-sm font-bold text-foreground">
-                Automated Delivery
+                Reliable release flow
               </h4>
               <div className="flex gap-2">
                 <div className="flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5">
@@ -97,7 +97,7 @@ export default function HeroSection() {
                 </div>
               </div>
               <p className="mt-3 text-[10px] font-medium text-muted-foreground">
-                Preview Deploys &amp; Release Gates
+                Preview URLs &amp; checks before production
               </p>
             </div>
 
@@ -118,7 +118,7 @@ export default function HeroSection() {
                 <div className="size-7 rounded-full border-2 border-surface bg-blue-400 dark:border-card" />
                 <div className="size-7 rounded-full border-2 border-surface bg-primary dark:border-card" />
                 <span className="pl-4 text-[10px] font-medium text-muted-foreground">
-                  +12k Users Engaged
+                  12k+ users subscribed to products
                 </span>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function HeroSection() {
                 </div>
               </div>
               <p className="mt-3 text-[11px] font-semibold text-primary">
-                End-to-End Solutions
+                From discovery to production
               </p>
             </div>
 

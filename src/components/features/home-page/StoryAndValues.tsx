@@ -31,7 +31,7 @@ const SAVs: SAV[] = [
 
 export default function StoryAndValues() {
   return (
-    <section className="py-20 bg-surface border-b border-stroke">
+    <section className="py-20">
       <div className="container">
         <div className="flex flex-col md:flex-row gap-12 md:gap-8 mb-16 items-end justify-between">
           <div className="max-w-2xl">
