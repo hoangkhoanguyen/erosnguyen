@@ -1,8 +1,8 @@
 const mockStats = [
-  { value: "5+", label: "Years of Experience" },
-  { value: "40+", label: "Projects Shipped" },
-  { value: "12", label: "Open Source Contribs" },
-  { value: "∞", label: "Curiosity" },
+  { value: "4", label: "Years of experience" },
+  { value: "10+", label: "Projects delivered" },
+  { value: "14K+", label: "Users onboarded" },
+  { value: "EN + VI", label: "Languages" },
 ];
 
 const StatsSection = () => {

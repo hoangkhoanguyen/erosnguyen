@@ -79,13 +79,13 @@ export function QuickContact() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button className="shadow-lg">Liên hệ</Button>
+        <Button className="shadow-lg">Contact</Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle className="text-center">Liên hệ nhanh</DialogTitle>
+          <DialogTitle className="text-center">Quick Contact</DialogTitle>
           <DialogDescription className="text-center">
-            Chọn một phương thức bên dưới hoặc gửi tin nhắn trực tiếp cho tôi.
+            Choose one of the methods below or send me a message directly.
           </DialogDescription>
         </DialogHeader>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -94,7 +94,7 @@ export function QuickContact() {
         <div className="flex items-center gap-4">
           <hr className="flex-1 border-slate-200 dark:border-slate-700" />
           <p className="text-xs font-medium text-slate-500 dark:text-slate-400">
-            hoặc
+            or
           </p>
           <hr className="flex-1 border-slate-200 dark:border-slate-700" />
         </div>
@@ -102,21 +102,21 @@ export function QuickContact() {
         <div className="flex flex-col gap-4 mb-2">
           <FieldGroup>
             <Field>
-              <Label>Tên của bạn</Label>
-              <Input placeholder="Nhập tên của bạn" />
+              <Label>Your name</Label>
+              <Input placeholder="Enter your name" />
             </Field>
             <Field>
-              <Label>Email của bạn</Label>
-              <Input type="email" placeholder="Nhập email của bạn" />
+              <Label>Your email</Label>
+              <Input type="email" placeholder="Enter your email" />
             </Field>
             <Field>
-              <Label>Tin nhắn</Label>
-              <Textarea placeholder="Tin nhắn của bạn" />
+              <Label>Your message</Label>
+              <Textarea placeholder="Your message" />
             </Field>
           </FieldGroup>
         </div>
         <DialogFooter>
-          <Button className="w-full">Gửi tin nhắn</Button>
+          <Button className="w-full">Send message</Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>

@@ -21,7 +21,8 @@ const SparkSection = () => {
           </div>
           <div className="absolute bottom-6 left-6 right-6 bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-md p-4 rounded-xl border border-white/10 shadow-lg z-20">
             <p className="text-sm text-gray-300 italic">
-              &quot;The only way to do great work is to love what you do.&quot;
+              &quot;Good products aren&apos;t just built well—they&apos;re built
+              for the people who use them.&quot;
             </p>
           </div>
         </div>
@@ -31,22 +32,15 @@ const SparkSection = () => {
           </h2>
           <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
             <p>
-              It all started in 2015. I wasn&apos;t studying Computer Science; I
-              was actually a graphic design major. I felt limited by static
-              images. I wanted my designs to <em>move</em>, to react, to live.
+              During university, I took courses in C programming and computer systems—subjects that built my foundation for algorithmic thinking. Then I got the opportunity to take on a frontend role, learning HTML, CSS, and JavaScript on the job. That hands-on start led me to expand into backend with React and Express.
             </p>
             <p>
-              I stumbled upon a &quot;View Source&quot; button on a browser.
-              That chaotic mess of HTML tags felt like a secret language. I
-              spent the next three months obsessed, breaking websites just to
-              see if I could fix them.
+              Before that, I worked in tutoring and sales. These taught me to <em>listen closely to what people need</em> and <em>explain complex ideas simply</em>—skills that carry directly into how I build products.
             </p>
             <p>
-              By the time I graduated, I knew my path wasn&apos;t just in making
-              things look good, but in building the engines that power them. The
-              transition from designer to developer gave me a unique superpower:
+              So today, I don't just ship features.{" "}
               <strong className="text-primary font-bold">
-                I speak both languages.
+                I build solutions that solve real problems for the people who use them.
               </strong>
             </p>
           </div>

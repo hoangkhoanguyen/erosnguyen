@@ -11,22 +11,22 @@ interface PhilosophyCardProps {
 
 const mockPhilosophies: PhilosophyCardProps[] = [
   {
-    icon: "hand-coins",
-    title: "Clean Code",
+    icon: "message-circle",
+    title: "Clarify Before Code",
     description:
-      "I believe code is written for humans first. If the logic isn't clear to a junior developer, it's not done. Maintainability > Cleverness.",
+      "I don't start coding until I understand the 'why' and map out edge cases. Ambiguity early costs more than time spent asking questions. In practice, I document expected scenarios and share them with stakeholders before implementation—it catches gaps and aligns expectations.",
   },
   {
-    icon: "bug",
-    title: "Problem Solver",
+    icon: "activity",
+    title: "Transparent Progress",
     description:
-      'I don\'t just take tickets. I ask "Why?". Understanding the business problem often reveals that the best code is no code at all.',
+      "Silence slows teams down. I share daily updates—what shipped, what's next, and where I'm stuck—even on long tasks. It gives the team visibility, surfaces blockers early, and builds trust that the work is moving forward.",
   },
   {
-    icon: "gauge",
-    title: "Performance",
+    icon: "users",
+    title: "Bridge Technical & Non-Technical",
     description:
-      "Performance is a feature. I optimize critical paths, minimize bundle sizes, and ensure accessible, fast experiences for every user.",
+      "I translate between engineers and stakeholders. My tutoring background taught me to explain complexity simply; my dev work taught me to push back constructively when requirements don't align with feasibility. I ask 'why' before saying 'yes,' and I frame technical constraints in terms of business impact.",
   },
 ];
 
@@ -36,10 +36,10 @@ export function CorePhilosophySection() {
       <div className="container flex flex-col gap-10">
         <div className="flex flex-col items-center gap-2 mb-4">
           <span className="text-primary font-bold tracking-widest uppercase text-sm">
-            My Approach
+            Work Style
           </span>
           <h2 className="text-foreground text-3xl font-bold text-center">
-            Core Philosophy
+            How I Work
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

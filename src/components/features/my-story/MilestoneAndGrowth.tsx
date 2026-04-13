@@ -10,38 +10,30 @@ interface Milestone {
   isColored: boolean;
 }
 
-const mockMilestones: Milestone[] = [
+const milestones: Milestone[] = [
   {
-    icon: "terminal-square",
-    year: "2015 - The Beginning",
-    title: "Hello World",
+    icon: "code",
+    year: "May – Sep 2022",
+    title: "First Dev Role",
     description:
-      "Wrote my first line of HTML. Built a portfolio for a friend's photography business. It was ugly, non-responsive, and riddled with inline CSS—but it was mine.",
+      "Joined a remote software agency as a fresher frontend developer. Implemented UI with Bootstrap and jQuery, then transitioned to React. Learned how to clarify tasks, work with modern tooling, and deliver with minimal bugs.",
     isColored: true,
   },
   {
-    icon: "school",
-    year: "2018 - Education",
-    title: "Formalizing the Craft",
+    icon: "layers",
+    year: "Oct 2022 – Present",
+    title: "Full-Stack Ownership",
     description:
-      "Graduated with a degree in Information Technology. While university taught me algorithms and data structures, the late nights at hackathons taught me how to actually ship products.",
-    isColored: false,
-  },
-  {
-    icon: "group",
-    year: "2020 - Leadership",
-    title: "The First Big Challenge",
-    description:
-      "Promoted to Team Lead. Tasked with migrating a monolithic PHP application to a microservices architecture. Learned that code is easy, but people and processes are the real challenge.",
-    isColored: false,
-  },
-  {
-    icon: "rocket",
-    year: "Present - Innovation",
-    title: "Architecting the Future",
-    description:
-      "Currently specializing in the React/Next.js ecosystem and Serverless edge computing. Contributing to open source and helping startups scale from 0 to 1.",
+      "Took ownership of the frontend for a shared platform serving internal departments and clients. Expanded into backend (Node, ExpressJS), mobile (React Native), design (Figma), and CI/CD. For backend, I implement features or coordinate requirements with the backend developer. Drove Zalo Mini App from concept to launch, reaching 14K+ subscribers in 1 year.",
     isColored: true,
+  },
+  {
+    icon: "users",
+    year: "Ongoing",
+    title: "Cross-Functional Coordination",
+    description:
+      "Took on BA and PM responsibilities alongside engineering: gathering requirements from leadership and departments, breaking down features, coordinating with design and backend teams, and catching business logic issues early. Established lightweight workflows to keep the team aligned in a fast-moving environment.",
+    isColored: false,
   },
 ];
 
@@ -49,19 +41,23 @@ const MilestoneAndGrowth = () => {
   return (
     <section className="py-20 bg-surface border-b border-stroke">
       <div className="container">
-        <h2 className="text-foreground text-3xl md:text-4xl font-black text-center mb-4">
-          Milestones &amp; Growth
-        </h2>
-        <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
-          A timeline of pivotal moments that shaped my career and technical
-          philosophy.
-        </p>
+        <div className="flex flex-col items-center gap-2 mb-16">
+          <span className="text-primary font-bold tracking-widest uppercase text-sm">
+            Experience
+          </span>
+          <h2 className="text-foreground text-3xl md:text-4xl font-black text-center">
+            Career Path
+          </h2>
+          <p className="text-center text-muted-foreground max-w-lg">
+            How my role and responsibilities grew over the past 4 years.
+          </p>
+        </div>
         <div className="px-4">
-          {mockMilestones.map((milestone, index) => (
+          {milestones.map((milestone, index) => (
             <MilestoneItem
               key={milestone.year}
               data={milestone}
-              isLast={index === mockMilestones.length - 1}
+              isLast={index === milestones.length - 1}
             />
           ))}
         </div>

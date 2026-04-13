@@ -13,21 +13,21 @@ interface Lesson {
 
 const mockLessons: Lesson[] = [
   {
-    title: 'The "Perfect Code" Trap',
+    title: "Rushing Without Requirements",
     challenge:
-      "Early in my career, I would delay shipping features because the code wasn't 'elegant' enough.",
+      "Early on, I'd dive into coding before fully understanding requirements. I'd hit edge cases mid-development, need clarification, and sometimes have to rework the core flow—delaying deadlines.",
     lesson:
-      '"Done is better than perfect." I learned to iterate. Ship the MVP, gather feedback, and refactor later. Value delivered to users > Beautiful code in a repo.',
-    icon: "code",
+      "Never commit to a deadline without clarifying requirements first. Now I document expected cases and solutions upfront before touching code—it saves time and sets clear expectations.",
+    icon: "alert-circle",
     color: "#f87171",
   },
   {
-    title: "The Production Crash",
+    title: "Silent Progress",
     challenge:
-      "A database migration I wrote locked a production table for 2 hours during peak traffic. Panic ensued.",
+      "I used to work quietly on multi-day or multi-week tasks, thinking 'I'll report when it's done.' My manager had no visibility, making it hard to track progress or offer help.",
     lesson:
-      "Always test with production-scale data. Observability and robust rollback strategies are not optional extras—they are the foundation of reliability.",
-    icon: "database",
+      "Daily updates became my habit: what I finished, what's next, and any blockers. It builds trust, surfaces issues early, and keeps the team aligned—even when working independently.",
+    icon: "message-circle",
     color: "#fbbf24",
   },
 ];
@@ -37,12 +37,14 @@ export function HardEarnedLessonsSection() {
     <section className="py-20 bg-background">
       <div className="container flex flex-col gap-12">
         <div className="text-center">
+          <span className="text-primary font-bold tracking-widest uppercase text-sm mb-2 block">
+            Growth
+          </span>
           <h2 className="text-foreground text-3xl font-bold mb-4">
-            Hard-Earned Lessons
+            Lessons Learned
           </h2>
-          <p className="text-muted-foreground">
-            The path wasn&apos;t always smooth. Here are the obstacles that
-            became my greatest teachers.
+          <p className="text-muted-foreground max-w-lg mx-auto">
+            Mistakes I made early on that shaped how I work today.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">

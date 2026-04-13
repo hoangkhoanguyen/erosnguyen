@@ -1,5 +1,12 @@
 import Link from "next/link";
-import { Facebook, Github, Linkedin, Mail } from "lucide-react";
+import {
+  Facebook,
+  Github,
+  LinkedinIcon,
+  Mail,
+  MessageCircleMore,
+} from "lucide-react";
+import { Icon } from "@iconify/react";
 
 export function Footer() {
   return (
@@ -10,32 +17,44 @@ export function Footer() {
         </p>
         <div className="flex items-center gap-4">
           <Link
-            href="https://github.com"
+            href="https://github.com/hoangkhoanguyen"
             className="text-muted-foreground hover:text-primary-600 transition-colors"
             aria-label="GitHub"
+            target="_blank"
           >
             <Github className="w-6 h-6" aria-hidden="true" />
           </Link>
           <Link
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/hoangkhoanguyen"
             className="text-muted-foreground hover:text-primary-600 transition-colors"
             aria-label="LinkedIn"
+            target="_blank"
           >
-            <Linkedin className="w-6 h-6" aria-hidden="true" />
+            <LinkedinIcon className="w-6 h-6" aria-hidden="true" />
           </Link>
           <Link
-            href="https://twitter.com"
+            href="mailto:nguyenhoangkhoa2305@gmail.com"
             className="text-muted-foreground hover:text-primary-600 transition-colors"
-            aria-label="Twitter"
+            aria-label="Email"
+            target="_blank"
           >
             <Mail className="w-6 h-6" aria-hidden="true" />
           </Link>
           <Link
-            href="https://twitter.com"
+            href="https://facebook.com/hoangkhoanguyen2305"
+            target="_blank"
             className="text-muted-foreground hover:text-primary-600 transition-colors"
-            aria-label="Twitter"
+            aria-label="Facebook"
           >
             <Facebook className="w-6 h-6" aria-hidden="true" />
+          </Link>
+          <Link
+            href="https://zalo.me/0772028960"
+            target="_blank"
+            className="text-muted-foreground hover:text-primary-600 transition-colors"
+            aria-label="Instagram"
+          >
+            <MessageCircleMore className="w-6 h-6" aria-hidden="true" />
           </Link>
         </div>
       </div>

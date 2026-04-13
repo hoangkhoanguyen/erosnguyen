@@ -13,6 +13,7 @@ type TechCategory = {
   title: string;
   icon: ComponentProps<typeof DynamicIcon>["name"];
   technologies: Tech[];
+  description?: string;
 };
 
 export const techCategories: TechCategory[] = [
@@ -25,27 +26,34 @@ export const techCategories: TechCategory[] = [
       { name: "TypeScript", icon: "logos:typescript-icon" },
       { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
       { name: "JavaScript", icon: "logos:javascript" },
+      { name: "Vue.js (in progress)", icon: "logos:vue" },
     ],
+    description:
+      "Confident building modern React/Next.js UIs: strong JS/TS fundamentals, clean component patterns, practical performance optimization (manual profiling). Comfortable with Next.js rendering & caching patterns and integrating common libraries.",
   },
   {
     title: "Backend",
     icon: "server",
     technologies: [
       { name: "Node.js", icon: "logos:nodejs-icon" },
-      { name: "NestJS", icon: "logos:nestjs" },
-      { name: "GraphQL", icon: "logos:graphql" },
-      { name: "Python", icon: "logos:python" },
+      { name: "ExpressJS", icon: "skill-icons:expressjs-light" },
+      { name: "NestJS (in progress)", icon: "logos:nestjs" },
     ],
+    description:
+      "Can deliver a complete backend app: authentication, role-based authorization (RBAC), CRUD APIs, and reporting endpoints. Growing: performance tuning, advanced infra patterns, and deeper NestJS usage.",
   },
   {
-    title: "Database",
+    title: "Database & ORM",
     icon: "database",
     technologies: [
       { name: "PostgreSQL", icon: "logos:postgresql" },
       { name: "MongoDB", icon: "logos:mongodb-icon" },
-      { name: "Redis", icon: "logos:redis" },
-      { name: "Firebase", icon: "logos:firebase" },
+      { name: "Drizzle ORM", icon: "material-icon-theme:drizzle" },
+      { name: "Sequelize", icon: "material-icon-theme:sequelize" },
+      { name: "Knex.js", icon: "logos:knex" },
     ],
+    description:
+      "Strong in application queries & data modeling; currently learning DB internals (functions, triggers,...).",
   },
   {
     title: "Tools & DevOps",
@@ -55,7 +63,10 @@ export const techCategories: TechCategory[] = [
       { name: "GitHub", icon: "mdi:github" },
       { name: "AWS", icon: "logos:aws" },
       { name: "Figma", icon: "logos:figma" },
+      { name: "Kubernetes", icon: "devicon:kubernetes" },
     ],
+    description:
+      "Comfortable bootstrapping, running, and debugging day-to-day workflows (containers, CI, cloud basics). Not my focus yet: deep performance tuning, hardening, or large-scale cluster ops.",
   },
 ];
 
@@ -83,13 +94,15 @@ export function TechStackSection() {
                   key={category.title}
                   className="bg-card rounded-xl p-6 border border-border shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <div className="flex items-center gap-3 mb-4 border-b border-border pb-3">
-                    <div className="p-2 rounded-lg bg-primary/10 text-primary">
-                      <DynamicIcon name={category.icon} />
+                  <div className="mb-4 border-b border-border pb-3">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 rounded-lg bg-primary/10 text-primary">
+                        <DynamicIcon name={category.icon} />
+                      </div>
+                      <h3 className="font-bold text-foreground leading-tight">
+                        {category.title}
+                      </h3>
                     </div>
-                    <h3 className="font-bold text-foreground">
-                      {category.title}
-                    </h3>
                   </div>
 
                   <ul className="space-y-3">
@@ -103,6 +116,12 @@ export function TechStackSection() {
                       </li>
                     ))}
                   </ul>
+
+                  {category.description ? (
+                    <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
+                      {category.description}
+                    </p>
+                  ) : null}
                 </div>
               ))}
             </div>
