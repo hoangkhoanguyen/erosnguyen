@@ -49,106 +49,113 @@ export default function HeroSection() {
 
         <div className="relative flex min-h-[500px] animate-fade-in-up items-center justify-center delay-200">
           <div className="relative h-[560px] sm:h-[450px] w-full max-w-[500px] translate-y-10">
-            <div className="absolute left-0 top-0 z-20 w-52 animate-float rounded-2xl p-5 shadow-2xl glass-card transition-shadow duration-300 ease-out hover:shadow-[0_0_35px_rgba(34,197,94,0.55)]">
-              <div className="mb-3 flex items-center gap-3">
-                <div className="rounded-lg bg-green-500/20 p-2 text-green-500">
-                  <Gauge className="size-[18px]" aria-hidden />
-                </div>
-                <span className="text-xs font-bold uppercase tracking-tighter text-muted-foreground">
-                  Performance
-                </span>
-              </div>
-              <h4 className="mb-2 text-sm font-bold text-foreground">
-                Fast, accessible experiences
-              </h4>
-              <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
-                <div className="h-full w-[94%] rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
-              </div>
-              <p className="mt-2 text-[10px] font-medium text-muted-foreground">
-                Lighthouse 94 — speed, accessibility &amp; SEO
-              </p>
-            </div>
-
-            <div className="absolute right-4 top-32 sm:top-20 z-30 w-56 animate-float-delayed rounded-2xl p-5 shadow-2xl glass-card transition-shadow duration-300 ease-out hover:shadow-[0_0_35px_rgba(59,130,246,0.55)]">
-              <div className="mb-3 flex items-center gap-3">
-                <div className="rounded-lg bg-blue-500/20 p-2 text-blue-500">
-                  <Network className="size-[18px]" aria-hidden />
-                </div>
-                <span className="text-xs font-bold uppercase tracking-tighter text-muted-foreground">
-                  Architecture
-                </span>
-              </div>
-              <h4 className="mb-2 text-sm font-bold text-foreground">
-                Reliable release flow
-              </h4>
-              <div className="flex gap-2">
-                <div className="flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5">
-                  <Cloud className="size-4" aria-hidden />
-                </div>
-                <div className="flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5">
-                  <Layers className="size-4" aria-hidden />
-                </div>
-                <div className="flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5">
-                  <Braces className="size-4" aria-hidden />
-                </div>
-              </div>
-              <p className="mt-3 text-[10px] font-medium text-muted-foreground">
-                Preview URLs &amp; checks before production
-              </p>
-            </div>
-
-            <div className="absolute top-60 sm:top-48 left-8 z-20 w-60 animate-float-delayed rounded-2xl p-5 shadow-2xl glass-card transition-shadow duration-300 ease-out hover:shadow-[0_0_35px_rgba(168,85,247,0.55)]">
-              <div className="mb-4 flex items-center gap-3">
-                <div className="rounded-lg bg-purple-500/20 p-2 text-purple-500">
-                  <UserRound className="size-[18px]" aria-hidden />
-                </div>
-                <span className="text-xs font-bold uppercase tracking-tighter text-muted-foreground">
-                  UX / UI
-                </span>
-              </div>
-              <h4 className="mb-3 text-sm font-bold text-foreground">
-                User-Centric Design
-              </h4>
-              <div className="-space-x-2 flex items-center">
-                <div className="size-7 rounded-full border-2 border-surface bg-gray-300 dark:border-card" />
-                <div className="size-7 rounded-full border-2 border-surface bg-blue-400 dark:border-card" />
-                <div className="size-7 rounded-full border-2 border-surface bg-primary dark:border-card" />
-                <span className="pl-4 text-[10px] font-medium text-muted-foreground">
-                  12k+ users subscribed to products
-                </span>
-              </div>
-            </div>
-
-            <div className="absolute top-96 sm:top-64 right-0 z-10 w-64 animate-float rounded-2xl p-5 shadow-2xl glass-card duration-300 ease-out shadow-blue-400">
-              <div className="mb-4 flex items-center gap-3">
-                <div className="rounded-lg bg-orange-500/20 p-2 text-orange-500">
-                  <Rocket className="size-[18px]" aria-hidden />
-                </div>
-                <span className="text-xs font-bold uppercase tracking-tighter text-muted-foreground">
-                  Full Cycle
-                </span>
-              </div>
-              <h4 className="mb-3 text-sm font-bold text-foreground">
-                Full-Stack Delivery
-              </h4>
-              <div className="flex items-center justify-between">
-                <div className="flex flex-col items-center">
-                  <div className="mb-1 size-2 rounded-full bg-muted-foreground" />
-                  <span className="text-[8px] uppercase text-muted-foreground">
-                    Idea
+            <div className="absolute left-0 top-0 z-20 hover:scale-105 hover:z-50 duration-300 ease-in-out cursor-default">
+              <div className="w-52 animate-float rounded-2xl p-5 shadow-2xl glass-card transition-shadow duration-300 ease-out hover:shadow-[0_0_35px_rgba(34,197,94,0.55)]">
+                <div className="mb-3 flex items-center gap-3">
+                  <div className="rounded-lg bg-green-500/20 p-2 text-green-500">
+                    <Gauge className="size-[18px]" aria-hidden />
+                  </div>
+                  <span className="text-xs font-bold uppercase tracking-tighter text-muted-foreground">
+                    Performance
                   </span>
                 </div>
-                <div className="mx-1 h-px flex-1 bg-linear-to-r from-muted-foreground via-primary/50 to-primary" />
-                <div className="flex flex-col items-center">
-                  <div className="mb-1 size-2 rounded-full bg-primary" />
-                  <span className="text-[8px] uppercase text-muted-foreground">
-                    Live
+                <h4 className="mb-2 text-sm font-bold text-foreground">
+                  Fast, accessible experiences
+                </h4>
+                <div className="h-1.5 w-full overflow-hidden rounded-full bg-muted">
+                  <div className="h-full w-[94%] rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]" />
+                </div>
+                <p className="mt-2 text-[10px] font-medium text-muted-foreground">
+                  Lighthouse 94 — speed, accessibility &amp; SEO
+                </p>
+              </div>
+            </div>
+
+            <div className="absolute right-4 top-32 sm:top-20 z-30 hover:scale-105 hover:z-50 duration-300 ease-in-out cursor-default">
+              <div className="w-56 animate-float-delayed rounded-2xl p-5 shadow-2xl glass-card transition-shadow duration-300 ease-out hover:shadow-[0_0_35px_rgba(59,130,246,0.55)]">
+                <div className="mb-3 flex items-center gap-3">
+                  <div className="rounded-lg bg-blue-500/20 p-2 text-blue-500">
+                    <Network className="size-[18px]" aria-hidden />
+                  </div>
+                  <span className="text-xs font-bold uppercase tracking-tighter text-muted-foreground">
+                    Architecture
+                  </span>
+                </div>
+                <h4 className="mb-2 text-sm font-bold text-foreground">
+                  Reliable release flow
+                </h4>
+                <div className="flex gap-2">
+                  <div className="flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5">
+                    <Cloud className="size-4" aria-hidden />
+                  </div>
+                  <div className="flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5">
+                    <Layers className="size-4" aria-hidden />
+                  </div>
+                  <div className="flex size-8 items-center justify-center rounded-lg border border-white/10 bg-white/5">
+                    <Braces className="size-4" aria-hidden />
+                  </div>
+                </div>
+                <p className="mt-3 text-[10px] font-medium text-muted-foreground">
+                  Preview URLs &amp; checks before production
+                </p>
+              </div>
+            </div>
+
+            <div className="absolute top-60 sm:top-48 left-8 z-20 hover:scale-105 hover:z-50 duration-300 ease-in-out cursor-default">
+              <div className="w-60 animate-float-delayed rounded-2xl p-5 shadow-2xl glass-card transition-shadow duration-300 ease-out hover:shadow-[0_0_35px_rgba(168,85,247,0.55)]">
+                <div className="mb-4 flex items-center gap-3">
+                  <div className="rounded-lg bg-purple-500/20 p-2 text-purple-500">
+                    <UserRound className="size-[18px]" aria-hidden />
+                  </div>
+                  <span className="text-xs font-bold uppercase tracking-tighter text-muted-foreground">
+                    UX / UI
+                  </span>
+                </div>
+                <h4 className="mb-3 text-sm font-bold text-foreground">
+                  User-Centric Design
+                </h4>
+                <div className="-space-x-2 flex items-center">
+                  <div className="size-7 rounded-full border-2 border-surface bg-gray-300 dark:border-card" />
+                  <div className="size-7 rounded-full border-2 border-surface bg-blue-400 dark:border-card" />
+                  <div className="size-7 rounded-full border-2 border-surface bg-primary dark:border-card" />
+                  <span className="pl-4 text-[10px] font-medium text-muted-foreground">
+                    14k+ users subscribed to products
                   </span>
                 </div>
               </div>
-              <p className="mt-3 text-[11px] font-semibold text-primary">
-                From discovery to production
-              </p>
+            </div>
+            <div className="absolute top-96 sm:top-64 right-0 z-10 hover:scale-105 hover:z-50 duration-300 ease-in-out cursor-default">
+              <div className="w-64 animate-float rounded-2xl p-5 shadow-2xl glass-card duration-300 ease-out shadow-blue-400">
+                <div className="mb-4 flex items-center gap-3">
+                  <div className="rounded-lg bg-orange-500/20 p-2 text-orange-500">
+                    <Rocket className="size-[18px]" aria-hidden />
+                  </div>
+                  <span className="text-xs font-bold uppercase tracking-tighter text-muted-foreground">
+                    Full Cycle
+                  </span>
+                </div>
+                <h4 className="mb-3 text-sm font-bold text-foreground">
+                  Full-Stack Delivery
+                </h4>
+                <div className="flex items-center justify-between">
+                  <div className="flex flex-col items-center">
+                    <div className="mb-1 size-2 rounded-full bg-muted-foreground" />
+                    <span className="text-[8px] uppercase text-muted-foreground">
+                      Idea
+                    </span>
+                  </div>
+                  <div className="mx-1 h-px flex-1 bg-linear-to-r from-muted-foreground via-primary/50 to-primary" />
+                  <div className="flex flex-col items-center">
+                    <div className="mb-1 size-2 rounded-full bg-primary" />
+                    <span className="text-[8px] uppercase text-muted-foreground">
+                      Live
+                    </span>
+                  </div>
+                </div>
+                <p className="mt-3 text-[11px] font-semibold text-primary">
+                  From discovery to production
+                </p>
+              </div>
             </div>
 
             <div
