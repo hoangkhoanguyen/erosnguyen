@@ -16,10 +16,10 @@ export default async function BlogsPage({ searchParams }: BlogsPageProps) {
   const pageCount = Math.ceil(totalBlogs / PAGE_SIZE);
 
   return (
-    <div className="container mx-auto bg-background mt-20 p-5">
-      <h1 className="text-4xl font-bold text-center pt-5 pb-3">Trang Blog</h1>
+    <div className="container mx-auto mt-20 p-5">
+      <h1 className="text-4xl font-bold text-center pt-5 pb-3">Blog</h1>
       <p className="text-lg text-center pb-10">
-        Chia sẻ kiến thức về phát triển web, công nghệ và con đường sự nghiệp.
+        Notes on web development, tooling, and building a career in software.
       </p>
 
       {/* Blog List */}

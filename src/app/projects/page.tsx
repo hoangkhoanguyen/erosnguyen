@@ -4,8 +4,8 @@ import { mockProject2Details, mockProjectDetail } from "@/mock/projects";
 export default function ProjectsPage() {
   const projects = [mockProjectDetail, mockProject2Details];
   return (
-    <div className="container mx-auto bg-background mt-20 p-5">
-      <h1 className="text-4xl font-bold pt-5 pb-3">Những dự án tâm huyết</h1>
+    <div className="container mx-auto mt-20 p-5">
+      <h1 className="text-4xl font-bold pt-5 pb-3">Featured projects</h1>
 
       {/* Filter */}
       {/* <PillFilter /> */}

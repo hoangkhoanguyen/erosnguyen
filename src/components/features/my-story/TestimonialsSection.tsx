@@ -69,7 +69,7 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 
 export function TestimonialsSection() {
   return (
-    <section className="py-20 bg-background border-t border-stroke">
+    <section className="py-20 border-t border-stroke bg-transparent">
       <div className="container">
         <h2 className="text-foreground text-3xl font-bold text-center mb-12">
           What People Say

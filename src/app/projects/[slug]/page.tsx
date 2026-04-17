@@ -15,13 +15,13 @@ import { extractToc } from "@/lib/utils";
 export default async function ProjectDetail() {
   const project = mockProjectDetail;
   return (
-    <div className="container mx-auto bg-background mt-20 p-5">
+    <div className="container mx-auto mt-20 p-5">
       {/* Breadcrumb */}
       <div className="py-2">
         <AppBreadcrumb
           items={[
-            { label: "Trang chủ", href: "/" },
-            { label: "Dự án", href: "/projects" },
+            { label: "Home", href: "/" },
+            { label: "Projects", href: "/projects" },
             { label: project.title },
           ]}
         />
@@ -46,14 +46,14 @@ export default async function ProjectDetail() {
         <div className="col-span-10 lg:col-span-7 rounded-xl">
           <h2 className="text-3xl font-bold mb-4 hover:text-primary duration-300 pb-5 flex items-center gap-2">
             <GalleryThumbnails size={32} className="text-primary" />
-            Thư viện ảnh
+            Image gallery
           </h2>
           <div className="mb-10">
             <GallerySlider images={project.images} />
           </div>
           <h2 className="text-3xl font-bold hover:text-primary duration-300 flex items-center gap-2 pt-15">
             <FileText size={24} className="text-primary" />
-            Chi tiết dự án
+            Project details
           </h2>
           <div className="post-content">
             <ReactMarkdown rehypePlugins={[rehypeHighlight]}>

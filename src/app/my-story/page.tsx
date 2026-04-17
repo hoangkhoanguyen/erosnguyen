@@ -4,7 +4,7 @@ import MilestoneAndGrowth from "@/components/features/my-story/MilestoneAndGrowt
 import { CorePhilosophySection } from "@/components/features/my-story/CorePhilosophySection";
 import { HardEarnedLessonsSection } from "@/components/features/my-story/HardEarnedLessonsSection";
 import { TechStackSection } from "@/components/features/home-page/TechStackSection";
-import { CallToActionSection } from "@/components/features/my-story/CallToActionSection";
+// import { CallToActionSection } from "@/components/features/my-story/CallToActionSection";
 
 const page = () => {
   return (
@@ -15,7 +15,7 @@ const page = () => {
       <CorePhilosophySection />
       <HardEarnedLessonsSection />
       <TechStackSection />
-      <CallToActionSection />
+      {/* <CallToActionSection /> */}
     </main>
   );
 };

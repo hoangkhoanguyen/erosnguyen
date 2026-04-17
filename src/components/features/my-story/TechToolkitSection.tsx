@@ -20,7 +20,7 @@ const tools: Tool[] = [
 
 export function TechToolkitSection() {
   return (
-    <section className="py-16 bg-surface border-b border-stroke">
+    <section className="py-16 border-b border-stroke bg-transparent">
       <div className="container text-center">
         <p className="text-sm font-bold text-muted-foreground uppercase tracking-widest mb-8">
           My Technical Toolkit

@@ -34,7 +34,7 @@ const mockLessons: Lesson[] = [
 
 export function HardEarnedLessonsSection() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-transparent">
       <div className="container flex flex-col gap-12">
         <div className="text-center">
           <span className="text-primary font-bold tracking-widest uppercase text-sm mb-2 block">

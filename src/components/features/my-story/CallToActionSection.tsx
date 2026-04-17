@@ -3,7 +3,7 @@ import { Mail, ArrowRight, Download } from "lucide-react";
 
 export function CallToActionSection() {
   return (
-    <section className="py-24 bg-background border-t border-stroke">
+    <section className="py-24 border-t border-stroke bg-transparent">
       <div className="container text-center flex flex-col gap-6 items-center w-full max-w-175">
         <div className="size-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-2">
           <Mail className="w-8 h-8" />

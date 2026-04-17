@@ -20,21 +20,19 @@ export default async function BlogDetail({ params }: Props) {
   const blog = BLOGS.find((b) => b.slug === resolvedParams.slug);
   if (!blog) {
     return (
-      <div className="container mx-auto bg-background mt-20 p-5">
-        Blog not found
-      </div>
+      <div className="container mx-auto mt-20 p-5">Blog not found</div>
     );
   }
   const tags = blog.tags;
 
   return (
-    <div className="container mx-auto bg-background mt-20 p-5">
+    <div className="container mx-auto mt-20 p-5">
       {/* Breadcrumb */}
       <div className="py-2">
         <AppBreadcrumb
           items={[
-            { label: "Trang chủ", href: "/" },
-            { label: "Blogs", href: "/blogs" },
+            { label: "Home", href: "/" },
+            { label: "Blog", href: "/blogs" },
             { label: blog.title },
           ]}
         />

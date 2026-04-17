@@ -26,7 +26,6 @@ export const techCategories: TechCategory[] = [
       { name: "TypeScript", icon: "logos:typescript-icon" },
       { name: "Tailwind CSS", icon: "logos:tailwindcss-icon" },
       { name: "JavaScript", icon: "logos:javascript" },
-      { name: "Vue.js (in progress)", icon: "logos:vue" },
     ],
     description:
       "Confident building modern React/Next.js UIs: strong JS/TS fundamentals, clean component patterns, practical performance optimization (manual profiling). Comfortable with Next.js rendering & caching patterns and integrating common libraries.",
@@ -37,7 +36,6 @@ export const techCategories: TechCategory[] = [
     technologies: [
       { name: "Node.js", icon: "logos:nodejs-icon" },
       { name: "ExpressJS", icon: "skill-icons:expressjs-light" },
-      { name: "NestJS (in progress)", icon: "logos:nestjs" },
     ],
     description:
       "Can deliver a complete backend app: authentication, role-based authorization (RBAC), CRUD APIs, and reporting endpoints. Growing: performance tuning, advanced infra patterns, and deeper NestJS usage.",
@@ -50,7 +48,6 @@ export const techCategories: TechCategory[] = [
       { name: "MongoDB", icon: "logos:mongodb-icon" },
       { name: "Drizzle ORM", icon: "material-icon-theme:drizzle" },
       { name: "Sequelize", icon: "material-icon-theme:sequelize" },
-      { name: "Knex.js", icon: "logos:knex" },
     ],
     description:
       "Strong in application queries & data modeling; currently learning DB internals (functions, triggers,...).",
@@ -60,10 +57,12 @@ export const techCategories: TechCategory[] = [
     icon: "terminal",
     technologies: [
       { name: "Docker", icon: "logos:docker-icon" },
-      { name: "GitHub", icon: "mdi:github" },
+      { name: "GitHub Actions", icon: "mdi:github" },
       { name: "AWS", icon: "logos:aws" },
       { name: "Figma", icon: "logos:figma" },
       { name: "Kubernetes", icon: "devicon:kubernetes" },
+      { name: "Talos", icon: "devicon:talos" },
+      { name: "Nginx", icon: "logos:nginx" },
     ],
     description:
       "Comfortable bootstrapping, running, and debugging day-to-day workflows (containers, CI, cloud basics). Not my focus yet: deep performance tuning, hardening, or large-scale cluster ops.",

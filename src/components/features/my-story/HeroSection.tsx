@@ -2,7 +2,7 @@ import { BookOpenText } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="py-16 bg-surface border-b border-stroke">
+    <section className="py-16 border-b border-stroke bg-transparent">
       <div className="flex flex-col container flex-1">
         <div className="@container">
           <div className="flex flex-col gap-6 items-center text-center py-10">

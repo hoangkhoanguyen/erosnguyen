@@ -9,7 +9,7 @@ import {
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
-// Helper function theo tài liệu
+// Pagination button layout helper (compact window around current page)
 function generatePaginationButtons(
   currentPage: number,
   totalPages: number,

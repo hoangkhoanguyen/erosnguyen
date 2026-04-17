@@ -64,7 +64,7 @@ export function Header() {
         className={cn(
           "pointer-events-auto w-full",
           "transition-[max-width,margin,border-radius,background-color,border-color,box-shadow,backdrop-filter] duration-500 ease-in-out",
-          "mt-3 container px-4 rounded-2xl border border-border/50 bg-background/70 shadow-lg shadow-black/4 dark:shadow-black/20 backdrop-blur-xl",
+          "mt-3 container px-4 rounded-2xl border border-border/50 bg-background/70 shadow-lg shadow-black/4 dark:shadow-black/20 backdrop-blur-xs",
         )}
       >
         <div className="flex items-center justify-between py-3">

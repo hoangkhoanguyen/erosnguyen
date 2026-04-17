@@ -8,6 +8,8 @@ import { ThemeInitializer } from "@/components/providers/ThemeInitializer";
 import FloatingActions from "@/components/layout/FloatingActions";
 import { PersonJsonLd } from "@/components/seo/PersonJsonLd";
 import { getSiteUrl, siteConfig } from "@/lib/site-config";
+import { ContactDialogProvider } from "@/components/shared/contact/ContactDialogProvider";
+import FixedBackground from "@/components/layout/FixedBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -107,10 +109,13 @@ export default function RootLayout({
         <PersonJsonLd />
         <ThemeInitializer />
         <ThemeProvider>
-          <Header />
-          {children}
-          <Footer />
-          <FloatingActions />
+          <FixedBackground />
+          <ContactDialogProvider>
+            <Header />
+            {children}
+            <Footer />
+            <FloatingActions />
+          </ContactDialogProvider>
         </ThemeProvider>
       </body>
     </html>

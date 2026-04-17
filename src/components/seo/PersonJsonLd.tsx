@@ -1,4 +1,5 @@
 import { siteConfig, getSiteUrl } from "@/lib/site-config";
+import { profile } from "@/constants/profile";
 
 export function PersonJsonLd() {
   const url = getSiteUrl();
@@ -9,7 +10,11 @@ export function PersonJsonLd() {
     url,
     image: `${url}/logo.jpg`,
     jobTitle: "Full-Stack Developer",
-    sameAs: [] as string[],
+    sameAs: [
+      profile.social.github,
+      profile.social.linkedin,
+      profile.social.facebook,
+    ] as string[],
   };
 
   return (

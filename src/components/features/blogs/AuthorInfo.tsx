@@ -26,7 +26,7 @@ export default function AuthorInfo({
         <span className="text-lg text-primary">{name}</span>
         <div className="flex items-center gap-2">
           <span className="text-sm text-gray-400 ">
-            Ngày đăng {publishedAt}
+            Published {publishedAt}
           </span>
           <span className="select-none text-gray-400">&bull;</span>
           <span className="text-sm text-gray-400 ">{readTime}</span>

@@ -7,30 +7,33 @@ import {
   Mail,
   MessageCircleMore,
 } from "lucide-react";
+import GetInTouchButton from "./GetInTouchButton";
+import { mailto, profile } from "@/constants/profile";
+import DownloadCVButton from "./DownloadCVButton";
 
 const socialLinks = [
   {
-    href: "https://github.com/hoangkhoanguyen",
+    href: profile.social.github,
     label: "GitHub",
     icon: Github,
   },
   {
-    href: "https://linkedin.com/in/hoangkhoanguyen",
+    href: profile.social.linkedin,
     label: "LinkedIn",
     icon: LinkedinIcon,
   },
   {
-    href: "mailto:nguyenhoangkhoa2305@gmail.com",
+    href: mailto(profile.email),
     label: "Email",
     icon: Mail,
   },
   {
-    href: "https://facebook.com/hoangkhoanguyen2305",
+    href: profile.social.facebook,
     label: "Facebook",
     icon: Facebook,
   },
   {
-    href: "https://zalo.me/0772028960",
+    href: profile.social.zalo,
     label: "Zalo",
     icon: MessageCircleMore,
   },
@@ -49,16 +52,16 @@ const navColumns = [
   {
     title: "Connect",
     links: [
-      { label: "GitHub", href: "https://github.com/hoangkhoanguyen" },
+      { label: "GitHub", href: profile.social.github },
       {
         label: "LinkedIn",
-        href: "https://linkedin.com/in/hoangkhoanguyen",
+        href: profile.social.linkedin,
       },
       {
         label: "Facebook",
-        href: "https://facebook.com/hoangkhoanguyen2305",
+        href: profile.social.facebook,
       },
-      { label: "Email", href: "mailto:nguyenhoangkhoa2305@gmail.com" },
+      { label: "Email", href: mailto(profile.email) },
     ],
   },
 ] as const;
@@ -87,21 +90,8 @@ export function Footer() {
               want to say hello — I&apos;d love to hear from you.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <Link
-                href="mailto:nguyenhoangkhoa2305@gmail.com"
-                className="inline-flex items-center gap-2 btn-beautiful-primary rounded-xl px-6 py-3 text-sm font-semibold transition-all duration-300 hover:scale-[1.03]"
-              >
-                <Mail className="size-4" aria-hidden />
-                Get in Touch
-              </Link>
-              <Link
-                href="https://github.com/hoangkhoanguyen"
-                target="_blank"
-                className="inline-flex items-center gap-2 rounded-xl border border-border bg-background px-6 py-3 text-sm font-semibold text-foreground transition-all duration-200 hover:border-primary/50 hover:text-primary hover:shadow-md"
-              >
-                <Github className="size-4" aria-hidden />
-                View GitHub
-              </Link>
+              <GetInTouchButton />
+              <DownloadCVButton />
             </div>
           </div>
 

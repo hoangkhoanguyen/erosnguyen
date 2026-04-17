@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SparkSection = () => {
   return (
-    <section className="py-20 border-b border-stroke bg-background">
+    <section className="py-20 border-b border-stroke bg-transparent">
       <div className="container grid lg:grid-cols-2 gap-12 items-center">
         <div className="relative group w-full aspect-4/5 md:aspect-square rounded-2xl overflow-hidden shadow-2xl">
           <div className="absolute inset-0 bg-primary/20 mix-blend-overlay z-10"></div>

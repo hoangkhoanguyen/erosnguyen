@@ -39,26 +39,26 @@ export default function ProjectInfo({ project }: Props) {
       className="group overflow-hidden flex flex-col transition-all duration-300 hover:shadow-lg relative gap-2"
     >
       <CardHeader className="pt-4 px-4">
-        <CardTitle className="text-xl">Thông tin dự án</CardTitle>
+        <CardTitle className="text-xl">Project overview</CardTitle>
       </CardHeader>
       <CardContent className="px-4 mb-2 flex flex-col gap-3">
         {renderInfoItem(
           "user",
-          "Vai trò",
+          "Role",
           <p className="text-base text-foreground font-medium">
             {project.projectInfo.status}
           </p>,
         )}
         {renderInfoItem(
           "calendar-days",
-          "Thời gian",
+          "Timeline",
           <p className="text-base text-foreground font-medium">
             {project.projectInfo.timeline}
           </p>,
         )}
         {renderInfoItem(
           "code",
-          "Công nghệ sử dụng",
+          "Tech stack",
           <div className="flex gap-2 flex-wrap mt-2">
             {project.tags.map((tag) => (
               <TechTag key={tag}>{tag}</TechTag>
@@ -76,7 +76,7 @@ export default function ProjectInfo({ project }: Props) {
         <Button variant={"secondary"} asChild>
           <a href={project.sourceUrl} target="_blank" rel="noreferrer">
             <Code size={16} />
-            Mã nguồn
+            Source code
           </a>
         </Button>
       </CardAction>

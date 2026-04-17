@@ -5,7 +5,7 @@ import { Code, Layers, Cpu, Database } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const filters = [
-  { key: "All", label: "Tất cả", icon: Layers },
+  { key: "All", label: "All", icon: Layers },
   { key: "Next.js", label: "Next.js", icon: Code },
   { key: "React", label: "React", icon: Cpu },
   { key: "Node.js", label: "Node.js", icon: Database },

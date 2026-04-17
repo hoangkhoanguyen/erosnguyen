@@ -15,7 +15,7 @@ export default function TableOfContent({ ToCs }: ToCProps) {
         <CardHeader className="pt-5">
           <CardTitle className="flex items-center text-xl gap-2">
             <TableOfContents size={20} />
-            Mục lục
+            Table of contents
           </CardTitle>
         </CardHeader>
 
@@ -32,7 +32,7 @@ export default function TableOfContent({ ToCs }: ToCProps) {
                 }
               `}
             >
-              {/* Thanh highlight */}
+              {/* Active indicator */}
               <div
                 className={`
                   w-1 h-4 mt-1

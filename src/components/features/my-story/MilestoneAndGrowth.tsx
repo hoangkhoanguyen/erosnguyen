@@ -39,7 +39,7 @@ const milestones: Milestone[] = [
 
 const MilestoneAndGrowth = () => {
   return (
-    <section className="py-20 bg-surface border-b border-stroke">
+    <section className="py-20 border-b border-stroke bg-transparent">
       <div className="container">
         <div className="flex flex-col items-center gap-2 mb-16">
           <span className="text-primary font-bold tracking-widest uppercase text-sm">
